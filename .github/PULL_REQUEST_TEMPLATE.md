@@ -1,4 +1,4 @@
-## React Boilerplate
+## Evi Guide
 
 Thank you for contributing!
 
