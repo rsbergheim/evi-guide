@@ -11,7 +11,6 @@ const engelsk: Partial<Localization> = {
     vilkår: "Terms and conditions",
     ja: "Yes",
     nei: "No"
-
 };
 
 export default engelsk;

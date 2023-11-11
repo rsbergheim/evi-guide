@@ -9,6 +9,7 @@ const Header: React.FC = () => {
     return (
         <header style={headerStyle}>
             <img src="/eviguide_logo.png" alt="Logo" />
+            <h1>{localizer(language, "aksepterBrukervilkaar")}</h1>
             <ul style={navItemsStyle}>
                 <li><a style={anchorStyle} href="/">{localizer(language, "hjem")}</a></li>
                 <li><a style={anchorStyle} href="/turer">{localizer(language, "turer")}</a></li>
