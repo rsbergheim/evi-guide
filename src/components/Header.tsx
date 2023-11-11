@@ -9,16 +9,19 @@ const Header: React.FC = () => {
     return (
         <header style={headerStyle}>
             <img src="/eviguide_logo.png" alt="Logo" />
-            <h1>{localizer(language, "aksepterBrukervilkaar")}</h1>
             <ul style={navItemsStyle}>
-                <li><a href="/">Home</a></li>
-                <li><a href="/turer">Turer</a></li>
-                <li><a href="/kurs">Kurs</a></li>
-                <li><a href="/utstyr">Utstyr</a></li>
-                <li><a href="/info">Info</a></li>
+                <li><a style={anchorStyle} href="/">{localizer(language, "hjem")}</a></li>
+                <li><a style={anchorStyle} href="/turer">{localizer(language, "turer")}</a></li>
+                <li><a style={anchorStyle} href="/kurs">{localizer(language, "kurs")}</a></li>
+                <li><a style={anchorStyle} href="/utstyr">{localizer(language, "utstyr")}</a></li>
+                <li><a style={anchorStyle} href="/info">{localizer(language, "info")}</a></li>
             </ul>
-            <button onClick={() => setLanguage(Language.en)}>English</button>
-            <button onClick={() => setLanguage(Language.no)}>Norsk</button>
+            <div style={navItemsStyle}>
+                <div onClick={() => setLanguage(Language.en)}>🇬🇧</div>
+                <div>|</div>
+                <div onClick={() => setLanguage(Language.no)}>🇳🇴</div>
+                <div></div>
+            </div>
         </header>
     );
 }
@@ -27,7 +30,7 @@ const headerStyle: React.CSSProperties = {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: '10px 50px',
+    padding: '10px 30px',
     backgroundColor: 'rgba(255, 255, 255, 0.9)',
     boxShadow: '0 3px 10px rgba(0, 0, 0, 0.1)'
 };
@@ -38,5 +41,11 @@ const navItemsStyle: React.CSSProperties = {
     gap: '20px'
 };
 
+const anchorStyle: React.CSSProperties = {
+    color: 'black', // Assuming the text color should be white
+    fontWeight: 'bold', // If the text is bold
+    textDecoration: 'none', // No underline by default
+    fontSize: '1.25em', // Adjust the font size as necessary
+};
 
 export default Header;
