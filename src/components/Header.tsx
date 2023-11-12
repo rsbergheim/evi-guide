@@ -6,22 +6,38 @@ import {localizer} from "../localization";
 const Header: React.FC = () => {
     const { language, setLanguage} = useLanguage();
 
+    // Function to handle mouse enter event
+    const handleMouseEnter = (e: React.MouseEvent<HTMLAnchorElement>) => {
+        //e.currentTarget.style.textDecoration = anchorHoverStyle.textDecoration;
+    };
+
+    // Function to handle mouse leave event
+    const handleMouseLeave = (e: React.MouseEvent<HTMLAnchorElement>) => {
+        e.currentTarget.style.textDecoration = 'none';
+    };
+
     return (
-        <header style={headerStyle}>
-            <img src="/eviguide_logo.png" alt="Logo" />
-            <h1>{localizer(language, "aksepterBrukervilkaar")}</h1>
-            <ul style={navItemsStyle}>
-                <li><a style={anchorStyle} href="/">{localizer(language, "hjem")}</a></li>
-                <li><a style={anchorStyle} href="/turer">{localizer(language, "turer")}</a></li>
-                <li><a style={anchorStyle} href="/kurs">{localizer(language, "kurs")}</a></li>
-                <li><a style={anchorStyle} href="/utstyr">{localizer(language, "utstyr")}</a></li>
-                <li><a style={anchorStyle} href="/info">{localizer(language, "info")}</a></li>
-            </ul>
-            <div style={navItemsStyle}>
-                <div onClick={() => setLanguage(Language.en)}>🇬🇧</div>
-                <div>|</div>
-                <div onClick={() => setLanguage(Language.no)}>🇳🇴</div>
-                <div></div>
+        <header>
+            <div style={topBarStyle}>
+                <a style={emailStyle} href="mailto:info@eviski.com" >{localizer(language, "epost")}</a>
+            </div>
+            <div style={headerStyle}>
+                <div style={navItemsStyle}>
+                    <img src="/eviguide_logo.png" alt="Logo" />
+                    <ul style={navItemsStyle}>
+                        <li><a style={anchorStyle} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} href="/">{localizer(language, "hjem")}</a></li>
+                        <li><a style={anchorStyle} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} href="/turer">{localizer(language, "turer")}</a></li>
+                        <li><a style={anchorStyle} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} href="/kurs">{localizer(language, "kurs")}</a></li>
+                        <li><a style={anchorStyle} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} href="/utstyr">{localizer(language, "utstyr")}</a></li>
+                        <li><a style={anchorStyle} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} href="/info">{localizer(language, "info")}</a></li>
+                    </ul>
+                </div>
+                <div style={navItemsStyle}>
+                    <div onClick={() => setLanguage(Language.en)}>🇬🇧</div>
+                    <div>|</div>
+                    <div onClick={() => setLanguage(Language.no)}>🇳🇴</div>
+                    <div></div>
+                </div>
             </div>
         </header>
     );
@@ -36,6 +52,18 @@ const headerStyle: React.CSSProperties = {
     boxShadow: '0 3px 10px rgba(0, 0, 0, 0.1)'
 };
 
+const topBarStyle: React.CSSProperties = {
+    backgroundColor: 'rgba(158, 12, 29, 1)',
+    padding: '5px 40px',
+}
+
+const emailStyle: React.CSSProperties = {
+    color: 'white', // Assuming the text color should be white
+    fontWeight: 'bold', // If the text is bold
+    textDecoration: 'none', // No underline by default
+    fontSize: '1.1em', // Adjust the font size as necessary
+}
+
 const navItemsStyle: React.CSSProperties = {
     listStyle: 'none',
     display: 'flex',
@@ -43,10 +71,15 @@ const navItemsStyle: React.CSSProperties = {
 };
 
 const anchorStyle: React.CSSProperties = {
-    color: 'black', // Assuming the text color should be white
+    color: 'black', // Assuming the text color should be black
     fontWeight: 'bold', // If the text is bold
     textDecoration: 'none', // No underline by default
     fontSize: '1.25em', // Adjust the font size as necessary
+};
+
+// Define a hover style
+const anchorHoverStyle: React.CSSProperties = {
+    textDecoration: 'underline', // Or change color
 };
 
 export default Header;

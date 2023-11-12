@@ -9,4 +9,5 @@ export default interface Localization {
     vilkår: string;
     ja: string;
     nei: string;
+    epost: string;
 }

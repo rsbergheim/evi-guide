@@ -10,7 +10,8 @@ const engelsk: Partial<Localization> = {
     kontaktinfo: "Contact Information",
     vilkår: "Terms and conditions",
     ja: "Yes",
-    nei: "No"
+    nei: "No",
+    epost: "E-mail"
 };
 
 export default engelsk;
