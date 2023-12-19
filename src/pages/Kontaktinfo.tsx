@@ -4,10 +4,10 @@ interface KontaktinfoProps {
     title: string;
 }
 
-const Kontaktinfo: React.FC<KontaktinfoProps> = ({ title }) => {
+const Kontaktinfo = () => {
     return (
         <div>
-            <h1>{title}</h1>
+            <h1>Kontaktinfo</h1>
             {/* Add more content for the sub page as needed */}
         </div>
     );

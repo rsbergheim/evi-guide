@@ -4,10 +4,10 @@ interface UtstyrProps {
     title: string;
 }
 
-const Utstyr: React.FC<UtstyrProps> = ({ title }) => {
+const Utstyr = () => {
     return (
         <div>
-            <h1>{title}</h1>
+            <h1>Utstyr</h1>
             {/* Add more content for the sub page as needed */}
         </div>
     );
