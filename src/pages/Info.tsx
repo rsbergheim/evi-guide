@@ -4,10 +4,10 @@ interface InfoProps {
     title: string;
 }
 
-const Info: React.FC<InfoProps> = ({ title }) => {
+const Info = () => {
     return (
         <div>
-            <h1>{title}</h1>
+            <h1>Info</h1>
             {/* Add more content for the sub page as needed */}
         </div>
     );

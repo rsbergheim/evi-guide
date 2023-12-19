@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Home: React.FC = () => {
+const Home = () => {
     return (
         <div style={homeStyle}>
             <img src="/eviguide_picture.png" alt="Ski Landscape" style={imageStyle}/>

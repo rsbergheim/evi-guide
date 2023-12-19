@@ -4,10 +4,10 @@ interface VilkaarProps {
     title: string;
 }
 
-const Vilkaar: React.FC<VilkaarProps> = ({ title }) => {
+const Vilkaar = () => {
     return (
         <div>
-            <h1>{title}</h1>
+            <h1>Vilkaar</h1>
             {/* Add more content for the sub-page as needed */}
         </div>
     );
