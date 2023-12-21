@@ -1,6 +1,5 @@
 import React from "react";
 import {useLanguage} from "../hooks/useLanguage";
-import {Language} from "../localization/Languages";
 import {localizer} from "../localization";
 
 const Footer: React.FC = () => {

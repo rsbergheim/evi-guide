@@ -1,15 +1,13 @@
-import React from 'react';
-
-interface KursProps {
-    title: string;
-}
+import { Page } from "../components/Page"
 
 const Kurs = () => {
     return (
-        <div>
-            <h1>Kurs</h1>
-            {/* Add more content for the sub page as needed */}
-        </div>
+        <Page>
+            <div>
+                <h1>Kurs</h1>
+                {/* Add more content for the sub page as needed */}
+            </div>
+        </Page>
     );
 }
 
