@@ -1,15 +1,14 @@
-import Header from './components/Header';
-import Footer from "./components/Footer";
-import {LanguageProvider} from "./contexts/LanguageContext";
 import AppRoutes from './AppRoutes';
+import { BrowserRouter } from 'react-router-dom';
+import { LanguageProvider } from './contexts/LanguageContext';
 
 function App() {
   return (
+    <BrowserRouter>
       <LanguageProvider>
-        <Header />
         <AppRoutes />
-        <Footer />
       </LanguageProvider>
+    </BrowserRouter>
   );
 }
 

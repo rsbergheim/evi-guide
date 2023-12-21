@@ -1,15 +1,13 @@
-import React from 'react';
-
-interface VilkaarProps {
-    title: string;
-}
+import { Page } from "../components/Page"
 
 const Vilkaar = () => {
     return (
-        <div>
-            <h1>Vilkaar</h1>
-            {/* Add more content for the sub-page as needed */}
-        </div>
+        <Page>
+            <div>
+                <h1>Vilkaar</h1>
+                {/* Add more content for the sub-page as needed */}
+            </div>
+        </Page>
     );
 }
 

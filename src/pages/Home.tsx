@@ -1,11 +1,17 @@
 import React from 'react';
+import { Page } from "../components/Page"
+import { useLanguage } from '../hooks/useLanguage';
+import { localizer } from '../localization';
 
 const Home = () => {
+
     return (
-        <div style={homeStyle}>
-            <img src="/eviguide_picture.png" alt="Ski Landscape" style={imageStyle}/>
-            {/* Add more content for the home page as needed */}
-        </div>
+        <Page>
+            <div style={homeStyle}>
+                <img src="/eviguide_picture.png" alt="Ski Landscape" style={imageStyle}/>
+                {/* Add more content for the home page as needed */}
+            </div>
+        </Page>
     );
 }
 

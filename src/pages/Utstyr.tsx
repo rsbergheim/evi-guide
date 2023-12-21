@@ -1,15 +1,14 @@
-import React from 'react';
+import { Page } from "../components/Page"
 
-interface UtstyrProps {
-    title: string;
-}
 
 const Utstyr = () => {
     return (
-        <div>
-            <h1>Utstyr</h1>
-            {/* Add more content for the sub page as needed */}
-        </div>
+        <Page>
+            <div>
+                <h1>Utstyr</h1>
+                {/* Add more content for the sub page as needed */}
+            </div>
+        </Page>
     );
 }
 
