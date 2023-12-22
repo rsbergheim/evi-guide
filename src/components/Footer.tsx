@@ -3,20 +3,22 @@ import {useLanguage} from "../hooks/useLanguage";
 import {localizer} from "../localization";
 
 const Footer: React.FC = () => {
-    const { language, setLanguage} = useLanguage();
+    const { language} = useLanguage();
     return (
-        <footer style={footerStyle}>
-            {/*
-            <h1>{localizer(language, "aksepterBrukervilkaar")}</h1>
-            <button>{localizer(language, "ja")}</button>
-            <button>{localizer(language, "nei")}</button>
-            */}
-            <a style={anchorStyle} href="/kontaktinfo">{localizer(language, "kontaktinfo")}</a>
-            <a style={anchorStyle} href="/vilkar">{localizer(language, "vilkår")}</a>
-            <a style={anchorStyle} href="https://www.instagram.com/eviguide/" target="_blank" rel="noopener noreferrer">
-                <img src="/instagram.svg" alt="Instagram" />
-            </a>
-            <a style={anchorStyle} href="https://www.nortind.no" target="_blank" rel="noopener noreferrer">Nortind</a>
+        <footer>
+            <div style={footerStyle}>
+                <a style={anchorStyle} href="/kontaktinfo">{localizer(language, "kontaktinfo")}</a>
+                <a style={anchorStyle} href="/vilkar">{localizer(language, "vilkår")}</a>
+                <a style={anchorStyle} href="https://www.instagram.com/eviguide/" target="_blank" rel="noopener noreferrer">
+                    <img src="/instagram.svg" alt="Instagram" />
+                </a>
+                <a style={anchorStyle} href="https://www.nortind.no" target="_blank" rel="noopener noreferrer">Nortind</a>
+            </div>
+            <div>
+                <h1>{localizer(language, "aksepterBrukervilkaar")}</h1>
+                <button>{localizer(language, "ja")}</button>
+                <button>{localizer(language, "nei")}</button>
+            </div>
         </footer>
     );
 }

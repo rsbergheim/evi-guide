@@ -1,7 +1,7 @@
 // localizer.tsx
 import Localization from "./localization";
 import bokmaal from "./languages/bokmaal";
-import {Language} from "./Languages";
+import {Language} from "./Language";
 import engelsk from "./languages/engelsk";
 
 const languages: Record<Language, Localization | Partial<Localization>> = {

@@ -1,7 +1,5 @@
 import React from 'react';
 import { Page } from "../components/Page"
-import { useLanguage } from '../hooks/useLanguage';
-import { localizer } from '../localization';
 
 const Home = () => {
 

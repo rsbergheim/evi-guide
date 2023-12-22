@@ -1,6 +1,6 @@
 import React from 'react';
 import {useLanguage} from "../hooks/useLanguage";
-import {Language} from "../localization/Languages";
+import {Language} from "../localization/Language";
 import {localizer} from "../localization";
 
 const Header: React.FC = () => {
@@ -8,7 +8,9 @@ const Header: React.FC = () => {
 
     // Function to handle mouse enter event
     const handleMouseEnter = (e: React.MouseEvent<HTMLAnchorElement>) => {
-        //e.currentTarget.style.textDecoration = anchorHoverStyle.textDecoration;
+        if (typeof anchorHoverStyle.textDecoration === "string") {
+            e.currentTarget.style.textDecoration = anchorHoverStyle.textDecoration;
+        }
     };
 
     // Function to handle mouse leave event
@@ -33,9 +35,9 @@ const Header: React.FC = () => {
                     </ul>
                 </div>
                 <div style={navItemsStyle}>
-                    <div onClick={() => setLanguage(Language.en)}>🇬🇧</div>
+                    <button onClick={() => setLanguage(Language.en)}>🇬🇧</button>
                     <div>|</div>
-                    <div onClick={() => setLanguage(Language.no)}>🇳🇴</div>
+                    <button onClick={() => setLanguage(Language.no)}>🇳🇴</button>
                     <div></div>
                 </div>
             </div>
