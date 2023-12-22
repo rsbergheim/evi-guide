@@ -1,35 +1,24 @@
-import React, {createContext, useState, useEffect, FC, useMemo} from 'react';
-import {Language} from '../localization/Languages';
+import React, { createContext, useContext, useState } from 'react';
+import { Language } from '../localization/Language';
 
-type LanguageContextType = {
-    language: Language;
-    setLanguage: React.Dispatch<React.SetStateAction<Language>>;
-};
+export const LanguageContext = createContext({
+  language: Language.en, // Initialize with a default value from the enum
+  setLanguage: (lang: Language) => {}
+});
 
-const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+export const useLanguage = () => useContext(LanguageContext);
 
+// Define the type for the props
 interface LanguageProviderProps {
-    children: React.ReactNode;
-}
+    children: React.ReactNode; // Define the children prop type
+  }
 
-const LanguageProvider: FC<LanguageProviderProps> = ({children}) => {
-    const browserLanguage: Language = (navigator.language.split(/[-_]/)[0] as Language) || Language.en;
-    const storedLanguage: Language = (localStorage.getItem('app-language') as Language) || browserLanguage;
-
-    const [language, setLanguage] = useState<Language>(storedLanguage);
-
-    useEffect(() => {
-        localStorage.setItem('app-language', language);
-    }, [language]);
-
-    // Memoize the context value
-    const contextValue = useMemo(() => ({language, setLanguage}), [language, setLanguage]);
+export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
+    const [language, setLanguage] = useState(Language.en);
 
     return (
-        <LanguageContext.Provider value={contextValue}>
-            {children}
-        </LanguageContext.Provider>
+      <LanguageContext.Provider value={{ language, setLanguage }}>
+        {children}
+      </LanguageContext.Provider>
     );
 };
-
-export {LanguageProvider, LanguageContext};
