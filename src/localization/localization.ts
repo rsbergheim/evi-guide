@@ -10,4 +10,5 @@ export default interface Localization {
     ja: string;
     nei: string;
     epost: string;
+    lesMer: string;
 }

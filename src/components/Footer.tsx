@@ -33,6 +33,8 @@ const Footer: React.FC = () => {
                     </a>
                     <a className="anchor" href="https://www.nortind.no" target="_blank"
                        rel="noopener noreferrer">Nortind</a>
+                    <a className="anchor" href="https://www.varsom.no/snoskred/varsling/varsel/Trollheimen/" target="_blank"
+                       rel="noopener noreferrer">Varsom</a>
             </footer>
         </>
     );

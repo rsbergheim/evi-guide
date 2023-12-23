@@ -11,7 +11,8 @@ const bokmaal: Localization = {
     vilkår: "Vilkår",
     ja: "Ja",
     nei: "Nei",
-    epost: "E-post"
+    epost: "E-post",
+    lesMer: "Les mer"
 };
 
 export default bokmaal;

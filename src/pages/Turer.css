@@ -1,0 +1,14 @@
+/* src/styles/Turer.css */
+
+.tour-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .tour-grid {
+        grid-template-columns: 1fr; /* Stack cards on small screens */
+    }
+}

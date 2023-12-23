@@ -1,4 +1,3 @@
-// localizer.tsx
 import Localization from "./localization";
 import bokmaal from "./languages/bokmaal";
 import {Language} from "./Language";
