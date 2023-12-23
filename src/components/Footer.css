@@ -1,7 +1,7 @@
 .footer {
-    position: fixed;
+    position: static;
     left: 0;
-    bottom: 0;
+    top: 0;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -43,6 +43,7 @@
     .footer {
         flex-direction: column; /* Stack footer content vertically on small screens */
         padding: 20px; /* Adjust padding for smaller screens */
+        align-items: center;
     }
 
     /* Adjust footer item styles for small screens */

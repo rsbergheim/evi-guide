@@ -7,6 +7,9 @@ const Utstyr = () => {
             <div>
                 <h1>Utstyr</h1>
                 {/* Add more content for the sub page as needed */}
+                <div>
+
+                </div>
             </div>
         </Page>
     );
