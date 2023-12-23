@@ -20,9 +20,11 @@ function AppRoutes() {
       <Route
         path="*"
         element={
-          <div>
-            <div>Her var det ikke noe innhold! Sjekk kart og kompass</div>
-          </div>
+            <><Home/>
+                <>
+                    <div>Her var det ikke noe innhold! Sjekk kart og kompass</div>
+                </>
+            </>
         }
       />
     </Routes>
