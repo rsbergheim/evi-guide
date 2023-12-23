@@ -1,0 +1,126 @@
+.top-bar {
+    background-color: rgba(158, 12, 29, 1);
+    padding: 5px 40px;
+}
+
+.email {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    flex: 0 1 auto; /* Adjust the flex-basis to control the width */
+    padding-right: 20px; /* Or adjust as needed */
+}
+
+.logo {
+    /* Adjust the size as needed to match your design */
+    height: auto;
+    width: auto; /* You can set a specific width if required */
+}
+
+.nav-container {
+    flex: 1; /* Take up the remaining space */
+    display: flex;
+    justify-content: center; /* Center the navigation items horizontally */
+    align-items: center;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Adjust the gap as needed */
+}
+
+.anchor {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+
+.anchor:hover {
+    text-decoration: underline; /* Or change color */
+}
+
+.language-toggle {
+    flex: 0 1 auto; /* Adjust the flex-basis to control the width */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Add space between language options */
+    /* Add other styles like padding or margin if needed */
+}
+
+.language-button {
+    background: none; /* Removes the background */
+    border: none; /* Removes the border */
+    color: black; /* Set the text color */
+    font-size: 1em; /* Adjust the font size as needed */
+    padding: 5px 10px; /* Adjust the padding as needed */
+    margin: 0 5px; /* Adds space between buttons */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.language-button:hover,
+.language-button:focus {
+    color: #007bff; /* Bootstrap primary color for hover state */
+    text-decoration: none; /* Removes underline text on hover */
+    outline: none; /* Removes the focus outline */
+}
+
+/* Add a separator for visual distinction */
+.language-separator {
+    color: black; /* Match the color with buttons */
+    padding: 0 10px; /* Space around the separator */
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        padding: 5px 20px; /* Reduced padding for smaller screens */
+    }
+
+    .header {
+        flex-direction: column; /* Stack items vertically on small screens */
+        padding: 10px 20px; /* Reduced padding for smaller screens */
+    }
+
+    .logo-container {
+        justify-content: center; /* Center logo on small screens */
+        padding-bottom: 10px; /* Add space below the logo */
+    }
+
+    .nav-container {
+        justify-content: center; /* Center navigation items on small screens */
+    }
+
+    .nav-items {
+        flex-direction: column; /* Stack nav items vertically on small screens */
+        gap: 10px; /* Reduced gap for smaller screens */
+    }
+
+    .language-toggle {
+        justify-content: center; /* Center language buttons on small screens */
+        padding-top: 10px; /* Add space above the language buttons */
+    }
+
+    .language-button {
+        padding: 5px; /* Adjust padding for smaller screens */
+        font-size: 0.9em; /* Reduce font size for smaller screens */
+    }
+
+    .language-separator {
+        display: none; /* Hide separator on small screens */
+    }
+}

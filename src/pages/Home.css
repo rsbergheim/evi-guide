@@ -1,0 +1,10 @@
+.home {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    width: 100%;
+    height: calc(100vh - 60px);
+    object-fit: cover;
+}

@@ -1,44 +1,41 @@
-import React from "react";
+import React, {useState} from "react";
 import {useLanguage} from "../hooks/useLanguage";
 import {localizer} from "../localization";
+import './Footer.css'
+import {Language} from "../localization/Language";
+
+const Modal: React.FC<{ onClose: () => void, language: Language }> = ({onClose, language}) => {
+    return (
+        <div className="modal-overlay">
+            <div className="modal-content">
+                {/* Display terms of use content here */}
+                <h1>{localizer(language, "aksepterBrukervilkaar")}</h1>
+                <button onClick={onClose}>{localizer(language, "ja")}</button>
+                <button onClick={onClose}>{localizer(language, "nei")}</button>
+            </div>
+        </div>
+    );
+};
 
 const Footer: React.FC = () => {
-    const { language} = useLanguage();
+    const {language} = useLanguage();
+    const [showModal, setShowModal] = useState(false);
+
     return (
-        <footer>
-            <div style={footerStyle}>
-                <a style={anchorStyle} href="/kontaktinfo">{localizer(language, "kontaktinfo")}</a>
-                <a style={anchorStyle} href="/vilkar">{localizer(language, "vilkår")}</a>
-                <a style={anchorStyle} href="https://www.instagram.com/eviguide/" target="_blank" rel="noopener noreferrer">
-                    <img src="/instagram.svg" alt="Instagram" />
-                </a>
-                <a style={anchorStyle} href="https://www.nortind.no" target="_blank" rel="noopener noreferrer">Nortind</a>
-            </div>
-            <div>
-                <h1>{localizer(language, "aksepterBrukervilkaar")}</h1>
-                <button>{localizer(language, "ja")}</button>
-                <button>{localizer(language, "nei")}</button>
-            </div>
-        </footer>
+        <>
+            {showModal && <Modal onClose={() => setShowModal(false)} language={language}/>}
+            <footer className="footer">
+                    <a className="anchor" href="/kontaktinfo">{localizer(language, "kontaktinfo")}</a>
+                    <a className="anchor" href="/vilkar">{localizer(language, "vilkår")}</a>
+                    <a className="anchor" href="https://www.instagram.com/eviguide/" target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="/instagram.svg" alt="Instagram"/>
+                    </a>
+                    <a className="anchor" href="https://www.nortind.no" target="_blank"
+                       rel="noopener noreferrer">Nortind</a>
+            </footer>
+        </>
     );
 }
-
-const footerStyle: React.CSSProperties = {
-    position: 'static',
-    bottom: '0',
-    width: '100%',
-    display: 'flex',
-    justifyContent: 'space-evenly',
-    padding: '20px 0',
-    backgroundColor: 'rgba(255, 255, 255, 0.9)',
-    boxShadow: '0 -3px 10px rgba(0, 0, 0, 0.1)'
-};
-
-const anchorStyle: React.CSSProperties = {
-    color: 'black', // Assuming the text color should be white
-    //fontWeight: 'bold', // If the text is bold
-    textDecoration: 'none', // No underline by default
-    fontSize: '1em', // Adjust the font size as necessary
-};
 
 export default Footer;
