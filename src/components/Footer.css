@@ -1,7 +1,5 @@
 .footer {
-    position: static;
-    left: 0;
-    top: 0;
+    position: page;
     width: 100%;
     display: flex;
     justify-content: space-evenly;

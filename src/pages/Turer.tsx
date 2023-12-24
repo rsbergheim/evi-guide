@@ -34,7 +34,7 @@ const Turer = () => {
     }, []);
 
     return (
-        <Page>
+        <Page isHomePage={false}>
             <div className="tour-grid">
                 {tours.map((tour: Tour) => (
                     <TourCard key={tour.id} tour={tour}/>
