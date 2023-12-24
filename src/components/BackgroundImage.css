@@ -1,0 +1,17 @@
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 60px); /* Adjust based on your header/footer size */
+    z-index: -1; /* Ensures it's behind content */
+}
+
+.background-image.home {
+    background: url('/public/eviguide_picture.jpeg') center/cover no-repeat fixed;
+}
+
+.background-image.other {
+    background: url('/public/eviguide_picture.jpeg') center/cover no-repeat fixed;
+    opacity: 0.5; /* Adjust the opacity to make it translucent */
+}

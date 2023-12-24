@@ -1,23 +1,26 @@
+import React from 'react';
 import Header from "./Header";
 import Footer from "./Footer";
-import { ReactNode } from "react";
+import BackgroundImage from "./BackgroundImage";
 import "./Page.css"
 
 export type PageProps = {
-    children: ReactNode
+    children: React.ReactNode;
+    isHomePage?: boolean;
 }
 
-function Page({ children }: Readonly<PageProps>) {
-
+function Page({children, isHomePage}: Readonly<PageProps>) {
     return (
-        <>
-        <Header />
-        <main className="content">
-            {children}
-        </main>
-        <Footer />
-        </>
-    )
+        <div id="root">
+            <Header/>
+            {isHomePage && <BackgroundImage isHomePage={isHomePage}/>}
+            <main className="content">
+                {!isHomePage && <BackgroundImage isHomePage={isHomePage}/>}
+                {children}
+            </main>
+            <Footer/>
+        </div>
+    );
 }
 
 export { Page };
