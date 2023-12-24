@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {useLanguage} from "../hooks/useLanguage";
 import {Language} from "../localization/Language";
 import {localizer} from "../localization";
@@ -6,6 +6,8 @@ import './Header.css'; // Import the new CSS file
 
 const Header: React.FC = () => {
     const {language, setLanguage} = useLanguage();
+    const [isNavVisible, setIsNavVisible] = useState(false); // State to toggle the navigation visibility
+
 
     // Function to handle mouse enter event
     const handleMouseEnter = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -17,12 +19,18 @@ const Header: React.FC = () => {
         e.currentTarget.style.textDecoration = 'none';
     };
 
+    const handleBurgerClick = () => {
+        setIsNavVisible(!isNavVisible); // Toggle navigation visibility
+    };
+
     return (
         <>
             <div className="top-bar">
                 <a className="email" href="mailto:info@eviski.com">{localizer(language, "epost")}</a>
+                <button className="burger" onClick={handleBurgerClick}>☰</button>
+                {/* Burger icon */}
             </div>
-            <header className="header">
+            <header className={`header ${isNavVisible ? 'nav-visible' : ''}`}>
                 <div className="logo-container">
                     <img className="logo" src="/eviguide_logo.png" alt="Logo"/>
                 </div>
