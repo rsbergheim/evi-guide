@@ -1,0 +1,37 @@
+.kurs-container {
+    max-width: 800px; /* Or any max-width you prefer */
+    margin: 0 auto; /* Center the container */
+    background: #fff; /* Assuming a light theme, adjust as needed */
+    opacity: 0.9;
+    padding: 20px;
+}
+
+.course {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #f8f9fa; /* Slightly different background to stand out */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    opacity: 0.9;
+}
+
+.course h2 {
+    color: #333; /* Dark text for readability */
+    margin-bottom: 10px;
+}
+
+.course p {
+    color: #666; /* Lighter text for the description */
+    line-height: 1.6; /* More readable line height */
+}
+
+.order-button {
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff; /* Bootstrap primary color */
+    border: none;
+    border-radius: 0.25rem;
+    color: white;
+    cursor: pointer;
+}

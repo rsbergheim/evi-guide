@@ -25,8 +25,8 @@ const Footer: React.FC = () => {
         <>
             {showModal && <Modal onClose={() => setShowModal(false)} language={language}/>}
             <footer className="footer">
-                    <a className="anchor" href="/kontaktinfo">{localizer(language, "kontaktinfo")}</a>
-                    <a className="anchor" href="/vilkar">{localizer(language, "vilkår")}</a>
+                    <a className="anchor" href="/info">{localizer(language, "kontaktinfo")}</a>
+                    <a className="anchor" href="/vilkaar">{localizer(language, "vilkår")}</a>
                     <a className="anchor" href="https://www.instagram.com/eviguide/" target="_blank"
                        rel="noopener noreferrer">
                         <img src="/instagram.svg" alt="Instagram"/>
