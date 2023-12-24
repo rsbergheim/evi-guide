@@ -33,3 +33,9 @@
     object-fit: cover; /* Ensure the aspect ratio of the image is maintained */
     border-radius: 4px; /* Optional: Rounded corners for the image */
 }
+
+@media (max-width: 768px) {
+    .utstyr{
+        flex-direction: column;
+    }
+}

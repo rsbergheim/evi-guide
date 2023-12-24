@@ -25,6 +25,21 @@ const coursesData: {
         titleKey: 'guidedToursTitle',
         descriptionKey: 'guidedToursDescription',
     },
+    {
+        id: 'backcountry-skiing-tours',
+        titleKey: 'backcountrySkiingToursTitle',
+        descriptionKey: 'backcountrySkiingToursDescription',
+    },
+    {
+        id: 'freeskiing-school',
+        titleKey: 'freeskiingSchoolTitle',
+        descriptionKey: 'freeskiingSchoolDescription',
+    },
+    {
+        id: 'glacier-tours',
+        titleKey: 'glacierToursTitle',
+        descriptionKey: 'glacierToursDescription',
+    },
     // ... add more courses as needed
 ];
 

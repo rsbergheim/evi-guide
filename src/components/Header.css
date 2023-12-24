@@ -1,6 +1,9 @@
 .top-bar {
     background-color: rgba(158, 12, 29, 1);
     padding: 5px 40px;
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Align items vertically */
 }
 
 .email {
@@ -8,6 +11,7 @@
     font-weight: bold;
     text-decoration: none;
     font-size: 1.1em;
+    margin: 0;
 }
 
 .header {
@@ -86,6 +90,16 @@
     padding: 0 10px; /* Space around the separator */
 }
 
+.burger {
+    display: none; /* Hide by default */
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #f8f9fa;
+    margin: 0;
+}
+
 @media (max-width: 768px) {
     .top-bar {
         padding: 5px 20px; /* Reduced padding for smaller screens */
@@ -122,5 +136,18 @@
 
     .language-separator {
         display: none; /* Hide separator on small screens */
+    }
+
+    .burger {
+        display: block; /* Show the burger icon on small screens */
+    }
+
+    .nav-container {
+        display: none; /* Hide the navigation on small screens */
+    }
+
+    .header.nav-visible .nav-container {
+        display: flex; /* Show the navigation when nav-visible class is added */
+        flex-direction: column; /* Stack items vertically */
     }
 }
