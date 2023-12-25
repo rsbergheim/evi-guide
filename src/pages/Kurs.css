@@ -1,7 +1,6 @@
 .kurs-container {
     max-width: 800px; /* Or any max-width you prefer */
     margin: 0 auto; /* Center the container */
-    background: #fff; /* Assuming a light theme, adjust as needed */
     opacity: 0.9;
     padding: 20px;
 }
