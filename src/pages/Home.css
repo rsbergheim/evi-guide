@@ -3,22 +3,13 @@
     flex-direction: column; /* Stack children vertically */
     align-items: center; /* Center-align the children */
     justify-content: center; /* Center content vertically */
-    margin: 40px auto; /* Center the container with automatic horizontal margins and some vertical spacing */
+    margin: auto; /* Center the container with automatic horizontal margins and some vertical spacing */
     background: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     padding: 20px; /* Padding around the content */
     width: 100%; /* Ensure it doesn't exceed the width of its parent */
     max-width: 800px;
-}
-
-/* Ensure the main element fills the available space */
-.main-content {
-    flex-grow: 1;
-    width: 100%; /* Full width */
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
 }
 
 /* Additional styling for the image and text inside the .home container */

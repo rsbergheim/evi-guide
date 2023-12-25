@@ -1,7 +1,6 @@
 .utstyr-container {
     max-width: 1000px; /* Adjusted max-width */
     margin: 0 auto; /* Center the container */
-    background: #fff; /* Light theme background */
     opacity: 0.9;
     display: flex; /* Use flexbox to layout children */
     flex-direction: column; /* Stack children vertically */
