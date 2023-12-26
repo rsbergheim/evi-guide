@@ -42,7 +42,7 @@ const norwegian: Localization = {
     antallPersoner: "Antall personer: ",
     dato: "Dato: ",
     område: "Område: ",
-    homeDescription: "EVI Guide er en guidetjeneste som har sprunget ut fra EVI ski på Øverlønset i Oppdal. Det primære guideområdet er Trollheimen og Sunndalsfjella, hvor guiden jobber med snøskredvarsling og på skifabrikken."
+    homeDescription: "EVI Guide er en guidetjeneste fra EVI ski på Øverlønset i Oppdal. Det primære guideområdet er Trollheimen og Sunndalsfjella, hvor guiden jobber med snøskredvarsling og på skifabrikken."
 };
 
 export default norwegian;
