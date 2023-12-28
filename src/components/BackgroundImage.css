@@ -1,17 +1,24 @@
 .background-image {
-    position: absolute;
+    position: fixed; /* Use fixed instead of absolute to cover the entire page */
     top: 0;
     left: 0;
     width: 100%;
-    height: calc(100vh - 60px); /* Adjust based on your header/footer size */
+    min-height: 100vh; /* At least the full height of the viewport */
     z-index: -1; /* Ensures it's behind content */
 }
 
+.background-image img {
+    width: 100%;
+    min-height: 100vh; /* At least the full height of the viewport */
+    object-fit: cover; /* Cover the entire area */
+}
+
 .background-image.home {
-    background: url('/public/eviguide_picture.jpeg') center/cover no-repeat fixed;
+    background: url('/public/eviguide_picture.jpeg') center/cover no-repeat;
+    opacity: 1; /* Full opacity for home */
 }
 
 .background-image.other {
-    background: url('/public/eviguide_picture.jpeg') center/cover no-repeat fixed;
+    background: url('/public/eviguide_picture.jpeg') center/cover no-repeat;
     opacity: 0.5; /* Adjust the opacity to make it translucent */
 }

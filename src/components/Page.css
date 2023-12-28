@@ -16,8 +16,3 @@ html, body {
     margin: 10px;
     justify-content: center
 }
-
-.footer {
-    flex-shrink: 0; /* Prevent the footer from shrinking */
-    background-color: rgba(255, 255, 255, 0.9);
-}
