@@ -25,7 +25,7 @@ const Info = () => {
                         </p>
                         <p>
                             {localizer(language, "kontaktinfoDescription2")}
-                            <a href="mailto:info@eviski.com"> info@eviski.com </a>
+                            <a href="mailto:info@eviguide.no"> info@eviguide.no </a>
                             {localizer(language, "kontaktinfoDescription3")}
                             <a href="tel:(+47)97544091"> (+47) 97 54 40 91 </a>
                         </p>

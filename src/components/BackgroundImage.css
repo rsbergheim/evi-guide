@@ -20,5 +20,5 @@
 
 .background-image.other {
     background: url('/public/eviguide_picture.jpeg') center/cover no-repeat;
-    opacity: 0.5; /* Adjust the opacity to make it translucent */
+    opacity: 0.8; /* Adjust the opacity to make it translucent */
 }

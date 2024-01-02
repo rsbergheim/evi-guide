@@ -28,10 +28,14 @@
     padding-right: 20px; /* Or adjust as needed */
 }
 
+.burger-container {
+    padding-right: 0;
+}
+
 .logo {
     /* Adjust the size as needed to match your design */
     height: auto;
-    width: auto; /* You can set a specific width if required */
+    max-width: 128px; /* You can set a specific width if required */
 }
 
 .nav-container {
@@ -96,8 +100,9 @@
     border: none;
     font-size: 1.5em;
     cursor: pointer;
-    color: #f8f9fa;
+    color: #000000;
     margin: 0;
+    box-shadow: #2b2f32;
 }
 
 @media (max-width: 768px) {
