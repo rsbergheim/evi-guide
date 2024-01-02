@@ -2,14 +2,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;
+    padding: 20px 20px;
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Add this to position the logo absolutely relative to the header */
+    min-height: 80px;
 }
 
 .logo-container {
     flex: 0 1 auto; /* Adjust the flex-basis to control the width */
     padding-right: 20px; /* Or adjust as needed */
+    position: relative; /* Changed from flex to relative */
+    z-index: 2; /* Ensures the logo floats above other elements */
 }
 
 .burger-container {
@@ -20,19 +24,22 @@
     /* Adjust the size as needed to match your design */
     height: auto;
     max-width: 100px; /* You can set a specific width if required */
+    position: absolute;
+    top: -35px; /* Adjust this value to control how much the logo overlaps */
+    left: -15px; /* Adjust for horizontal positioning */
 }
 
 .nav-container {
     flex: 1; /* Take up the remaining space */
     display: flex;
     justify-content: center; /* Center the navigation items horizontally */
-    align-items: center;
 }
 
 .nav-items {
     list-style: none;
+    align-items: center;
     display: flex;
-    gap: 20px; /* Adjust the gap as needed */
+    gap: 50px; /* Adjust the gap as needed */
 }
 
 .anchor {
@@ -50,27 +57,20 @@
     flex: 0 1 auto; /* Adjust the flex-basis to control the width */
     display: flex;
     align-items: center;
-    gap: 10px; /* Add space between language options */
-    /* Add other styles like padding or margin if needed */
+    height: 100%;
 }
 
 .language-button {
     background: none; /* Removes the background */
     border: none; /* Removes the border */
     color: black; /* Set the text color */
-    font-size: 1em; /* Adjust the font size as needed */
-    padding: 5px 10px; /* Adjust the padding as needed */
-    margin: 0 5px; /* Adds space between buttons */
+    font-size: 1.25em; /* Adjust the font size as needed */
+    padding: 0 10px; /* Adjust the padding as needed */
+    margin: auto; /* Adds space between buttons */
     cursor: pointer; /* Changes the cursor to a pointer on hover */
     transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
-.language-button:hover,
-.language-button:focus {
-    color: #007bff; /* Bootstrap primary color for hover state */
-    text-decoration: none; /* Removes underline text on hover */
-    outline: none; /* Removes the focus outline */
-}
 
 /* Add a separator for visual distinction */
 .language-separator {
@@ -92,12 +92,22 @@
 @media (max-width: 768px) {
     .header {
         flex-direction: column; /* Stack items vertically on small screens */
-        padding: 10px 20px; /* Reduced padding for smaller screens */
+        padding: 15px 20px; /* Reduced padding for smaller screens */
     }
 
     .logo-container {
-        justify-content: center; /* Center logo on small screens */
+        position: static; /* Revert back to default positioning */
+        /* Adjust padding and alignment as needed */
         padding-bottom: 10px; /* Add space below the logo */
+        display: flex;
+        justify-content: center; /* Center logo on small screens */
+    }
+
+    .logo {
+        position: static; /* Revert back to default */
+        max-width: 80px; /* Optional: Adjust size for smaller screens */
+        top: auto; /* Reset top positioning */
+        left: auto; /* Reset left positioning */
     }
 
     .nav-container {
