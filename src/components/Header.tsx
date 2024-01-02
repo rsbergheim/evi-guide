@@ -2,22 +2,11 @@ import React, {useState} from 'react';
 import {useLanguage} from "../hooks/useLanguage";
 import {Language} from "../localization/Language";
 import {localizer} from "../localization";
-import './Header.css'; // Import the new CSS file
+import './Header.css';
 
 const Header: React.FC = () => {
     const {language, setLanguage} = useLanguage();
     const [isNavVisible, setIsNavVisible] = useState(false); // State to toggle the navigation visibility
-
-
-    // Function to handle mouse enter event
-    const handleMouseEnter = (e: React.MouseEvent<HTMLAnchorElement>) => {
-        e.currentTarget.style.textDecoration = 'underline';
-    };
-
-    // Function to handle mouse leave event
-    const handleMouseLeave = (e: React.MouseEvent<HTMLAnchorElement>) => {
-        e.currentTarget.style.textDecoration = 'none';
-    };
 
     const handleBurgerClick = () => {
         setIsNavVisible(!isNavVisible); // Toggle navigation visibility
@@ -33,15 +22,15 @@ const Header: React.FC = () => {
             </div>
             <nav className="nav-container">
                 <ul className="nav-items">
-                    <li><a className="anchor" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+                    <li><a className="anchor" 
                            href="/">{localizer(language, "hjem")}</a></li>
-                    <li><a className="anchor" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+                    <li><a className="anchor" 
                            href="/turer">{localizer(language, "turer")}</a></li>
-                    <li><a className="anchor" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+                    <li><a className="anchor" 
                            href="/kurs">{localizer(language, "kurs")}</a></li>
-                    <li><a className="anchor" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+                    <li><a className="anchor" 
                            href="/utstyr">{localizer(language, "utstyr")}</a></li>
-                    <li><a className="anchor" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+                    <li><a className="anchor" 
                            href="/info">{localizer(language, "info")}</a></li>
                 </ul>
             </nav>
