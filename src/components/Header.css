@@ -97,7 +97,6 @@
 
     .logo-container {
         position: static; /* Revert back to default positioning */
-        /* Adjust padding and alignment as needed */
         padding-bottom: 10px; /* Add space below the logo */
         display: flex;
         justify-content: center; /* Center logo on small screens */
@@ -110,13 +109,10 @@
         left: auto; /* Reset left positioning */
     }
 
-    .nav-container {
-        justify-content: center; /* Center navigation items on small screens */
-    }
-
     .nav-items {
         flex-direction: column; /* Stack nav items vertically on small screens */
-        gap: 10px; /* Reduced gap for smaller screens */
+        margin: 0 0 0 -30px;
+        gap: 5px; /* Reduced gap for smaller screens */
     }
 
     .language-toggle {
@@ -126,7 +122,7 @@
 
     .language-button {
         padding: 5px; /* Adjust padding for smaller screens */
-        font-size: 0.9em; /* Reduce font size for smaller screens */
+        font-size: 1.3em; /* Reduce font size for smaller screens */
     }
 
     .language-separator {
