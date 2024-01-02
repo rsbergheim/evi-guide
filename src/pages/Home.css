@@ -1,15 +1,15 @@
 .home-container {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center-align the children */
-    justify-content: center; /* Center content vertically */
-    margin: auto; /* Center the container with automatic horizontal margins and some vertical spacing */
     background: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    padding: 20px; /* Padding around the content */
-    width: 100%; /* Ensure it doesn't exceed the width of its parent */
-    max-width: 800px;
+    max-width: 1000px; /* Adjusted max-width */
+    margin: 20px auto; /* Center the container */
+    opacity: 0.9;
+    display: flex; /* Use flexbox to layout children */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    padding: 40px; /* Add some padding */
+
 }
 
 /* Additional styling for the image and text inside the .home container */
@@ -17,11 +17,12 @@
     flex: 1;
 }
 
-.home img {
-    max-width: 300px; /* Maximum width for the image */
-    max-height: 300px; /* Maximum height for the image */
+
+.logo-signature {
+    /* Adjust the size as needed to match your design */
+    max-width: 200px; /* Maximum width for the image */
+    height: auto; /* Maximum height for the image */
     object-fit: cover; /* Ensure the aspect ratio of the image is maintained */
-    border-radius: 4px; /* Optional: Rounded corners for the image */
 }
 
 .logo {

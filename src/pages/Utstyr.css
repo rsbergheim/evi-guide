@@ -5,7 +5,7 @@
     display: flex; /* Use flexbox to layout children */
     flex-direction: column; /* Stack children vertically */
     align-items: center; /* Center children horizontally */
-    padding: 40px; /* Add some padding */
+    padding: 20px; /* Add some padding */
 }
 
 .utstyr {
