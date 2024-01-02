@@ -23,3 +23,9 @@
     object-fit: cover; /* Ensure the aspect ratio of the image is maintained */
     border-radius: 4px; /* Optional: Rounded corners for the image */
 }
+
+.logo {
+    /* Adjust the size as needed to match your design */
+    height: auto;
+    max-width: 128px; /* You can set a specific width if required */
+}

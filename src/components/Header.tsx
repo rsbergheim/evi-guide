@@ -24,32 +24,33 @@ const Header: React.FC = () => {
     };
 
     return (
-        <>
-            <div className="top-bar">
-                <a className="email" href="mailto:info@eviski.com">{localizer(language, "epost")}</a>
-                <button className="burger" onClick={handleBurgerClick}>☰</button>
-                {/* Burger icon */}
+        <header className={`header ${isNavVisible ? 'nav-visible' : ''}`}>
+            <div className="logo-container">
+                <img className="logo" src="/eviguide_logo.png" alt="Logo"/>
             </div>
-            <header className={`header ${isNavVisible ? 'nav-visible' : ''}`}>
-                <div className="logo-container">
-                    <img className="logo" src="/eviguide_logo.png" alt="Logo"/>
-                </div>
-                <nav className="nav-container">
-                    <ul className="nav-items">
-                        <li><a className="anchor" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} href="/">{localizer(language, "hjem")}</a></li>
-                        <li><a className="anchor" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} href="/turer">{localizer(language, "turer")}</a></li>
-                        <li><a className="anchor" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} href="/kurs">{localizer(language, "kurs")}</a></li>
-                        <li><a className="anchor" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} href="/utstyr">{localizer(language, "utstyr")}</a></li>
-                        <li><a className="anchor" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} href="/info">{localizer(language, "info")}</a></li>
-                    </ul>
-                </nav>
-                <div className="language-toggle">
-                    <button className="language-button" onClick={() => setLanguage(Language.en)}>🇬🇧</button>
-                    <div className="language-separator">|</div>
-                    <button className="language-button" onClick={() => setLanguage(Language.no)}>🇳🇴</button>
-                </div>
-            </header>
-        </>
+            <div className="burger-container">
+                <button className="burger" onClick={handleBurgerClick}>☰</button>
+            </div>
+            <nav className="nav-container">
+                <ul className="nav-items">
+                    <li><a className="anchor" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+                           href="/">{localizer(language, "hjem")}</a></li>
+                    <li><a className="anchor" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+                           href="/turer">{localizer(language, "turer")}</a></li>
+                    <li><a className="anchor" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+                           href="/kurs">{localizer(language, "kurs")}</a></li>
+                    <li><a className="anchor" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+                           href="/utstyr">{localizer(language, "utstyr")}</a></li>
+                    <li><a className="anchor" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+                           href="/info">{localizer(language, "info")}</a></li>
+                </ul>
+            </nav>
+            <div className="language-toggle">
+                <button className="language-button" onClick={() => setLanguage(Language.en)}>🇬🇧</button>
+                <div className="language-separator">|</div>
+                <button className="language-button" onClick={() => setLanguage(Language.no)}>🇳🇴</button>
+            </div>
+        </header>
     );
 };
 

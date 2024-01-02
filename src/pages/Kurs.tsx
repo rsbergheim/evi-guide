@@ -52,7 +52,7 @@ const Kurs = () => {
             localizer(language, "antallPersoner") + " \n" +
             localizer(language, "dato") + " \n" +
             localizer(language, "område") + " \n");
-        return `mailto:info@eviski.com?subject=${subject}&body=${body}`;
+        return `mailto:info@eviguide.no?subject=${subject}&body=${body}`;
     };
 
 
