@@ -16,7 +16,7 @@ const Home = () => {
                     <p>{localizer(language, "homeDescription")}</p>
                     <p>{localizer(language, "pålDescription")}</p>
                 </div>
-                <img className="logo" src="/eviguide_logo.png" alt="Evi Guide"/>
+                <img className="logo-signature" src="/eviguide_logo.png" alt="Evi Guide"/>
             </div>
         </Page>
     );
