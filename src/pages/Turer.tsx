@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import TourCard from '../components/TourCard';
-import {Tour} from "../components/TourCard";
+import TourCard, {Tour} from '../components/TourCard';
 import {Page} from "../components/Page";
 import "./Turer.css"
 
