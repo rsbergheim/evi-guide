@@ -1,4 +1,4 @@
 export enum Language {
-    no = 'Bokmaal',
-    en = 'English'
+    no = 'no',
+    en = 'en'
 }

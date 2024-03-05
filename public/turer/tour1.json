@@ -1,8 +1,38 @@
 {
   "id": "tour1",
-  "title": "Det beste av Romsdalen",
-  "description": "Åndalsnes, Isfjorden, Måndalen og Innfjorden",
+  "title": {
+    "en": "The Best of Romsdalen",
+    "no": "Det beste av Romsdalen"
+  },
+  "description": {
+    "en": "Åndalsnes, Isfjorden, Måndalen, and Innfjorden",
+    "no": "Åndalsnes, Isfjorden, Måndalen og Innfjorden"
+  },
   "image": "tour1.jpg",
   "difficulty": "Moderate",
-  "length": "2 days"
+  "length": "2 days",
+  "details": {
+    "en": {
+      "longDescription": "Long description in English",
+      "images": [
+        "tour1-1.jpg",
+        "tour1-2.jpg"
+      ],
+      "mapCoordinates": {
+        "lat": 62.56744,
+        "lon": 7.6878
+      }
+    },
+    "no": {
+      "longDescription": "Lang beskrivelse på norsk",
+      "images": [
+        "tour1-1.jpg",
+        "tour1-2.jpg"
+      ],
+      "mapCoordinates": {
+        "lat": 62.56744,
+        "lon": 7.6878
+      }
+    }
+  }
 }

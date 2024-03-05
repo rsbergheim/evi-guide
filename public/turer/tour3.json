@@ -1,8 +1,38 @@
 {
   "id": "tour3",
-  "title": "Rennekjøring i Øksendalen",
-  "description": "Slipset på Trondskjortetind",
+  "title": {
+    "en": "Couloir Skiing in Øksendalen",
+    "no": "Rennekjøring i Øksendalen"
+  },
+  "description": {
+    "en": "Trondskjortetind and Litlskjorta",
+    "no": "Trondskjortetind og Litlskjorta"
+  },
   "image": "tour3.jpg",
   "difficulty": "Hard",
-  "length": "1 day"
+  "length": "1 day",
+  "details": {
+    "en": {
+      "longDescription": "Dare the steep slopes of Øksendalen, home to the infamous Trondskjortetind and Litlskjorta.",
+      "images": [
+        "tour3-1.jpg",
+        "tour3-2.jpg"
+      ],
+      "mapCoordinates": {
+        "lat": 62.59554,
+        "lon": 8.21037
+      }
+    },
+    "no": {
+      "longDescription": "Våg de bratte bakkene i Øksendalen, hjem til de beryktede Trondskjortetind og Litlskjorta.",
+      "images": [
+        "tour3-1.jpg",
+        "tour3-2.jpg"
+      ],
+      "mapCoordinates": {
+        "lat": 62.59554,
+        "lon": 8.21037
+      }
+    }
+  }
 }

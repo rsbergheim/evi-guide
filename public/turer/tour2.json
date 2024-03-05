@@ -1,8 +1,38 @@
 {
   "id": "tour2",
-  "title": "Brekjøring i Vinnu Blanche",
-  "description": "Høyt og lavt i vinnumassivet",
+  "title": {
+    "en": "Skiing on Vinnubreen",
+    "no": "Skikjøring på Vinnubreen"
+  },
+  "description": {
+    "en": "Norway's answer to Vallée Blanche",
+    "no": "Norges svar på Vallée Blanche"
+  },
   "image": "tour2.jpg",
   "difficulty": "Easy",
-  "length": "1 day"
+  "length": "1 day",
+  "details": {
+    "en": {
+      "longDescription": "Experience the thrill of skiing on Vinnubreen, a journey through breathtaking landscapes.",
+      "images": [
+        "tour2-1.jpg",
+        "tour2-2.jpg"
+      ],
+      "mapCoordinates": {
+        "lat": 62.47318,
+        "lon": 8.34202
+      }
+    },
+    "no": {
+      "longDescription": "Opplev spenningen ved å stå på ski på Vinnubreen, en reise gjennom fantastiske landskap.",
+      "images": [
+        "tour2-1.jpg",
+        "tour2-2.jpg"
+      ],
+      "mapCoordinates": {
+        "lat": 62.47318,
+        "lon": 8.34202
+      }
+    }
+  }
 }
