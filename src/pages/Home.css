@@ -1,23 +1,3 @@
-.home-container {
-    background: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    max-width: 1000px; /* Adjusted max-width */
-    margin: 20px auto; /* Center the container */
-    opacity: 0.9;
-    display: flex; /* Use flexbox to layout children */
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center children horizontally */
-    padding: 40px; /* Add some padding */
-
-}
-
-/* Additional styling for the image and text inside the .home container */
-.home-text {
-    flex: 1;
-}
-
-
 .logo-signature {
     /* Adjust the size as needed to match your design */
     max-width: 200px; /* Maximum width for the image */

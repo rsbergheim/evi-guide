@@ -1,5 +1,5 @@
 import React from 'react';
-import {Page} from "../components/Page";
+import {ContentContainer, ContentSection, ContentText, Page} from "../components/Page";
 import {useLanguage} from "../hooks/useLanguage"; // Assuming this hook provides the current language and a function to set it
 import {localizer} from "../localization"; // Assuming this function handles the localization
 import Localization from "../localization/localization"; // Import the Localization interface
@@ -58,18 +58,20 @@ const Kurs = () => {
 
     return (
         <Page>
-            <div className="kurs-container">
+            <ContentContainer>
                 {coursesData.map(course => (
-                    <div key={course.id} className="course">
-                        <h2>{localizer(language, course.titleKey)}</h2>
-                        <p>{localizer(language, course.descriptionKey)}</p>
-                        <a href={createMailtoLink(course.titleKey)}>
-                            <button className="order-button">{localizer(language, "bestill")}</button>
-                        </a>
-                        {/* Add a button or link to course details if necessary */}
-                    </div>
+                    <ContentSection key={course.id}>
+                        <ContentText>
+                            <h2>{localizer(language, course.titleKey)}</h2>
+                            <p>{localizer(language, course.descriptionKey)}</p>
+                            <a href={createMailtoLink(course.titleKey)}>
+                                <button className="order-button">{localizer(language, "bestill")}</button>
+                            </a>
+                            {/* Add a button or link to course details if necessary */}
+                        </ContentText>
+                    </ContentSection>
                 ))}
-            </div>
+            </ContentContainer>
         </Page>
     );
 };

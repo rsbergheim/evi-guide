@@ -1,32 +1,4 @@
-.utstyr-container {
-    max-width: 1000px; /* Adjusted max-width */
-    margin: 0 auto; /* Center the container */
-    opacity: 0.9;
-    display: flex; /* Use flexbox to layout children */
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center children horizontally */
-    padding: 20px; /* Add some padding */
-}
-
-.utstyr {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Align items vertically */
-    justify-content: space-between; /* Space between text and image */
-    padding: 20px;
-    width: 100%; /* Take the full width of the container */
-    background: #f8f9fa; /* Slightly different background */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    opacity: 0.9;
-    margin-bottom: 20px;
-}
-
-.utstyr-text {
-    flex: 1; /* Allows text to grow and fill space not used by the image */
-    margin-right: 20px; /* Add some space between text and image */
-}
-
-.utstyr img {
+.utstyr-logo {
     max-width: 300px; /* Maximum width for the image */
     max-height: 300px; /* Maximum height for the image */
     object-fit: cover; /* Ensure the aspect ratio of the image is maintained */
