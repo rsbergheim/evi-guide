@@ -9,10 +9,3 @@ html, body {
     flex-direction: column;
     min-height: 100vh; /* Ensure root element takes at least the full viewport height */
 }
-
-.content {
-    flex: 1 0 auto; /* Flex-grow, flex-shrink, flex-basis */
-    align-items: center; /* Center children horizontally */
-    margin: 10px;
-    justify-content: center
-}

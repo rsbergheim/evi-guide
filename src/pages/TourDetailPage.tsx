@@ -3,7 +3,7 @@ import {useParams} from "react-router-dom";
 import {useLanguage} from "../hooks/useLanguage";
 import {MapContainer, TileLayer, Marker, Popup} from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import {Page} from "../components/Page";
+import {ContentContainer, ContentSection, ContentText, Page} from "../components/Page";
 import "./Info.css";
 
 type LocalizedDetails = {
@@ -61,13 +61,15 @@ const TourDetailPage: React.FC = () => {
 
     return (
         <Page isHomePage={false}>
-            <div className="info-container">
-                <div>
-                    <h2>{tourDetail.title[language]}</h2>
-                    <p>{details.longDescription}</p>
-                    {details.images.map((image) => (
-                        <img key={image} src={`../../public/turer/images/${image}`} alt={`Detail of ${image}`}/>
-                    ))}
+            <ContentContainer>
+                <ContentSection>
+                    <ContentText>
+                        <h2>{tourDetail.title[language]}</h2>
+                        <p>{details.longDescription}</p>
+                        {details.images.map((image) => (
+                            <img key={image} src={`../../public/turer/images/${image}`} alt={`Detail of ${image}`}/>
+                        ))}
+                    </ContentText>
                     <MapContainer style={{height: "400px", width: "100%"}}>
                         <TileLayer
                             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -78,8 +80,8 @@ const TourDetailPage: React.FC = () => {
                             </Popup>
                         </Marker>
                     </MapContainer>
-                </div>
-            </div>
+                </ContentSection>
+            </ContentContainer>
         </Page>
     );
 };

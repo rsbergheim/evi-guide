@@ -1,5 +1,10 @@
 import React from 'react';
-import {Page} from "../components/Page";
+import {
+    ContentContainer,
+    ContentSection,
+    ContentText,
+    Page
+} from "../components/Page";
 import {localizer} from "../localization";
 import {useLanguage} from "../hooks/useLanguage";
 import "./Info.css";
@@ -9,17 +14,17 @@ const Info = () => {
 
     return (
         <Page>
-            <div className="info-container">
-                <div className="info">
-                    <div className="info-text">
+            <ContentContainer>
+                <ContentSection>
+                    <ContentText>
                         <h1>Pål Røsrud</h1>
                         <p>{localizer(language, "pålDescription")}</p>
-                    </div>
-                    <img src="/paal.jpg" alt="Pål Røsrud"/>
-                </div>
-                <div className="info">
-                    <div className="info-text">
-                        <h2>{localizer(language, "kontaktinfoHeader")}</h2>
+                    </ContentText>
+                    <img className="profile-picture" src="/paal.jpg" alt="Pål Røsrud"/>
+                </ContentSection>
+                <ContentSection>
+                    <ContentText>
+                    <h2>{localizer(language, "kontaktinfoHeader")}</h2>
                         <p>
                             {localizer(language, "kontaktinfoDescription1")}
                         </p>
@@ -29,9 +34,9 @@ const Info = () => {
                             {localizer(language, "kontaktinfoDescription3")}
                             <a href="tel:(+47)97544091"> (+47) 97 54 40 91 </a>
                         </p>
-                    </div>
-                </div>
-            </div>
+                    </ContentText>
+                </ContentSection>
+            </ContentContainer>
         </Page>
     );
 };
