@@ -3,8 +3,8 @@ import {useParams} from "react-router-dom";
 import {useLanguage} from "../hooks/useLanguage";
 import {MapContainer, TileLayer, Marker, Popup} from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import {ContentContainer, ContentSection, ContentText, Page} from "../components/Page";
-import "./Info.css";
+import {ContentContainer, ContentSectionVert, ContentText, Page} from "../components/Page";
+import "./TourDetailPage.css"
 
 type LocalizedDetails = {
     longDescription: string;
@@ -62,13 +62,19 @@ const TourDetailPage: React.FC = () => {
     return (
         <Page isHomePage={false}>
             <ContentContainer>
-                <ContentSection>
+                <ContentSectionVert>
                     <ContentText>
                         <h2>{tourDetail.title[language]}</h2>
                         <p>{details.longDescription}</p>
+                        <div>
                         {details.images.map((image) => (
-                            <img key={image} src={`../../public/turer/images/${image}`} alt={`Detail of ${image}`}/>
+                            <>
+                                <img key={image} className="illustrative-img" src={`/turer/images/${image}`}
+                                   alt={`Detail of ${image}`}/>
+                                <p></p>
+                            </>
                         ))}
+                        </div>
                     </ContentText>
                     <MapContainer style={{height: "400px", width: "100%"}}>
                         <TileLayer
@@ -80,7 +86,7 @@ const TourDetailPage: React.FC = () => {
                             </Popup>
                         </Marker>
                     </MapContainer>
-                </ContentSection>
+                </ContentSectionVert>
             </ContentContainer>
         </Page>
     );
