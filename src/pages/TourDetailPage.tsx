@@ -1,10 +1,21 @@
 import React, {useEffect, useState} from 'react';
 import {useParams} from "react-router-dom";
 import {useLanguage} from "../hooks/useLanguage";
-import {MapContainer, TileLayer, Marker, Popup} from 'react-leaflet';
+import {MapContainer, TileLayer, Marker} from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
+import L, {LatLngExpression} from 'leaflet';
 import {ContentContainer, ContentSectionVert, ContentText, Page} from "../components/Page";
 import "./TourDetailPage.css"
+import icon from 'leaflet/dist/images/marker-icon.png';
+import iconShadow from 'leaflet/dist/images/marker-shadow.png';
+
+let DefaultIcon = L.icon({
+    iconUrl: icon,
+    shadowUrl: iconShadow
+});
+
+L.Marker.prototype.options.icon = DefaultIcon;
+
 
 type LocalizedDetails = {
     longDescription: string;
@@ -38,7 +49,9 @@ const TourDetailPage: React.FC = () => {
                 try {
                     const response = await fetch(`/turer/${tourId}.json`);
                     if (!response.ok) {
-                        throw new Error('Tour not found');
+                        console.error('Tour not found');
+                        setTourDetail(null);
+                        return;
                     }
                     const data = await response.json();
                     setTourDetail(data);
@@ -57,7 +70,8 @@ const TourDetailPage: React.FC = () => {
 
     // Accessing `details` based on the current language
     const details = tourDetail.details[language];
-    const position = [details.mapCoordinates.lat, details.mapCoordinates.lon];
+    const position: LatLngExpression = [details.mapCoordinates.lat, details.mapCoordinates.lon]; // Explicitly type position
+
 
     return (
         <Page isHomePage={false}>
@@ -76,14 +90,16 @@ const TourDetailPage: React.FC = () => {
                         ))}
                         </div>
                     </ContentText>
-                    <MapContainer style={{height: "400px", width: "100%"}}>
-                        <TileLayer
+                    <MapContainer
+                        center={position}
+                        zoom={13}
+                        scrollWheelZoom={false}
+                        style={{height: "400px", width: "60%"}}
+                    >
+                    <TileLayer
                             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                         />
                         <Marker position={position}>
-                            <Popup>
-                                A pretty CSS3 popup. <br/> Easily customizable.
-                            </Popup>
                         </Marker>
                     </MapContainer>
                 </ContentSectionVert>

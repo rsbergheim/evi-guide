@@ -36,7 +36,7 @@ const MainContent = styled.main`
 const ContentContainer = styled.div`
     max-width: 1000px; /* Adjusted max-width */
     margin: 0 auto; /* Center the container */
-    opacity: 0.8;
+    opacity: 0.9;
     display: flex; /* Use flexbox to layout children */
     flex-direction: column; /* Stack children vertically */
     align-items: center; /* Center children horizontally */
@@ -74,7 +74,6 @@ const ContentSectionVert = styled.div`
 // Textual content within a ContentSection
 const ContentText = styled.div`
     flex: 1;
-    margin-right: 20px;
 `;
 
 export {MainContent, ContentContainer, ContentSection, ContentSectionVert, ContentText, Page};
