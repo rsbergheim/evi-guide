@@ -4,3 +4,13 @@
     object-fit: cover;
     transition: transform 0.5s ease;
 }
+
+.ContentText p {
+    font-family: 'Arial', sans-serif; /* Replace with your chosen font */
+    font-size: 16px; /* Adjust as needed */
+    line-height: 1.6; /* Adjust as needed */
+    text-align: left;
+    color: #333; /* This should be a dark color if your background is light and vice versa */
+    max-width: 600px; /* Maximum width of paragraphs */
+    margin-bottom: 20px; /* Spacing between paragraphs */
+}
