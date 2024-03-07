@@ -79,11 +79,13 @@ const TourDetailPage: React.FC = () => {
                 <ContentSectionVert>
                     <ContentText>
                         <h2>{tourDetail.title[language]}</h2>
-                        <p>{details.longDescription}</p>
+                        <p className="ContentText">{details.longDescription.split('\n').map((paragraph, index) => (
+                            <p key={index} className="ContentText">{paragraph}</p>
+                        ))}</p>
                         <div>
-                        {details.images.map((image) => (
-                            <>
-                                <img key={image} className="illustrative-img" src={`/turer/images/${image}`}
+                            {details.images.map((image) => (
+                                <>
+                                    <img key={image} className="illustrative-img" src={`/turer/images/${image}`}
                                    alt={`Detail of ${image}`}/>
                                 <p></p>
                             </>
