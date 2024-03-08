@@ -6,6 +6,7 @@ import "./Turer.css"
 const Turer = () => {
     const [tours, setTours] = useState<Tour[]>([]);
 
+
     useEffect(() => {
         // Immediately Invoked Function Expression (IIFE) for async operations
         (async () => {
@@ -17,7 +18,7 @@ const Turer = () => {
                 try {
                     const response = await fetch(`/turer/tour${i}.json`);
                     if (!response.ok) {
-                        throw new Error('Tour not found');
+                        console.log('Tour not found');
                     }
                     const tourData = await response.json();
                     tourList.push(tourData);
@@ -33,7 +34,7 @@ const Turer = () => {
     }, []);
 
     return (
-        <Page isHomePage={false}>
+        <Page>
             <div className="tour-grid">
                 {tours.map((tour: Tour) => (
                     <TourCard key={tour.id} tour={tour}/>

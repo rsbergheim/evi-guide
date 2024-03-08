@@ -1,0 +1,24 @@
+{
+  "id": "course5",
+  "title": {
+    "en": "Glacier course",
+    "no": "Brekurs"
+  },
+  "duration": {
+    "en": "1 day",
+    "no": "1 dag"
+  },
+  "description": {
+    "en": "Learn to navigate and ski on glaciers safely",
+    "no": "Lær deg å navigere på snø- og isbreer trygt med og uten ski"
+  },
+  "bringEquipment": {
+    "en": "Avalanche transceiver, probe and shovel, winter clothing (including down/PrimaLoft jacket), skis or splitboard with skins, food and drink",
+    "no": "Skredsøker, søkestang og spade, vinterklær (inkl. dun/primaloftjakke), ski eller splitboard med feller, mat og drikke"
+  },
+  "difficulty": {
+    "en": "Basic",
+    "no": "Grunnleggende"
+  }
+}
+

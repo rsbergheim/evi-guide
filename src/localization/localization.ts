@@ -11,19 +11,7 @@ export default interface Localization {
     nei: string;
     epost: string;
     lesMer: string;
-    coursesHeading: string; // Title for the courses page
-    beginnerLevelTitle: string; // Title for beginner-level courses
-    beginnerLevelDescription: string; // Description for beginner-level courses
-    expertLevelTitle: string; // Title for expert-level courses
-    expertLevelDescription: string; // Description for expert-level courses
-    guidedToursTitle: string; // Title for guided tours
-    guidedToursDescription: string; // Description for guided tours
-    backcountrySkiingToursTitle: string;
-    backcountrySkiingToursDescription: string;
-    freeskiingSchoolTitle: string;
-    freeskiingSchoolDescription: string;
-    glacierToursTitle: string;
-    glacierToursDescription: string;
+    coursesHeading: string;
     bestill: string;
     pålDescription: string;
     kontaktinfoHeader: string;
@@ -41,4 +29,6 @@ export default interface Localization {
     dato: string;
     område: string;
     homeDescription: string;
+    niva: string;
+    lengde: string;
 }

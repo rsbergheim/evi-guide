@@ -1,75 +1,41 @@
-import React from 'react';
-import {ContentContainer, ContentSection, ContentText, Page} from "../components/Page";
-import {useLanguage} from "../hooks/useLanguage"; // Assuming this hook provides the current language and a function to set it
-import {localizer} from "../localization"; // Assuming this function handles the localization
-import Localization from "../localization/localization"; // Import the Localization interface
+import React, {useEffect, useState} from 'react';
+import {ContentContainer, Page} from "../components/Page";
 import "./Kurs.css"
-
-const coursesData: {
-    id: string;
-    titleKey: keyof Localization;
-    descriptionKey: keyof Localization;
-}[] = [
-    {
-        id: 'beginner-level',
-        titleKey: 'beginnerLevelTitle',
-        descriptionKey: 'beginnerLevelDescription',
-    },
-    {
-        id: 'expert-level',
-        titleKey: 'expertLevelTitle',
-        descriptionKey: 'expertLevelDescription',
-    },
-    {
-        id: 'guided-tours',
-        titleKey: 'guidedToursTitle',
-        descriptionKey: 'guidedToursDescription',
-    },
-    {
-        id: 'backcountry-skiing-tours',
-        titleKey: 'backcountrySkiingToursTitle',
-        descriptionKey: 'backcountrySkiingToursDescription',
-    },
-    {
-        id: 'freeskiing-school',
-        titleKey: 'freeskiingSchoolTitle',
-        descriptionKey: 'freeskiingSchoolDescription',
-    },
-    {
-        id: 'glacier-tours',
-        titleKey: 'glacierToursTitle',
-        descriptionKey: 'glacierToursDescription',
-    },
-    // ... add more courses as needed
-];
+import CourseCard, {Course} from "../components/CourseCard";
 
 const Kurs = () => {
-    const {language} = useLanguage(); // Use the language state from the context
+    const [courses, setCourses] = useState<Course[]>([]);
 
-    const createMailtoLink = (titleKey: keyof Localization) => {
-        const subject = encodeURIComponent(localizer(language, titleKey));
-        const body = encodeURIComponent(
-            localizer(language, "antallPersoner") + " \n" +
-            localizer(language, "dato") + " \n" +
-            localizer(language, "område") + " \n");
-        return `mailto:info@eviguide.no?subject=${subject}&body=${body}`;
-    };
 
+    useEffect(() => {
+        (async () => {
+            let courseList = [];
+            let i = 1;
+            let keepFetching = true;
+
+            while (keepFetching) {
+                try {
+                    const response = await fetch(`/kurs/kurs${i}.json`);
+                    if (!response.ok) {
+                        console.log('Course not found');
+                    }
+                    const courseData = await response.json();
+                    courseList.push(courseData);
+                    i++;
+                } catch (error) {
+                    keepFetching = false;
+                }
+            }
+
+            setCourses(courseList);
+        })();
+    }, []);
 
     return (
         <Page>
             <ContentContainer>
-                {coursesData.map(course => (
-                    <ContentSection key={course.id}>
-                        <ContentText>
-                            <h2>{localizer(language, course.titleKey)}</h2>
-                            <p>{localizer(language, course.descriptionKey)}</p>
-                            <a href={createMailtoLink(course.titleKey)}>
-                                <button className="order-button">{localizer(language, "bestill")}</button>
-                            </a>
-                            {/* Add a button or link to course details if necessary */}
-                        </ContentText>
-                    </ContentSection>
+                {courses.map(course => (
+                    <CourseCard key={course.id} course={course}/>
                 ))}
             </ContentContainer>
         </Page>
