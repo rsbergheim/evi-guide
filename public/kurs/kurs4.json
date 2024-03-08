@@ -13,9 +13,10 @@
     "no": "Lær skiteknikk og å finne bra skiterreng utenfor løypa i fjellet"
   },
   "bringEquipment": {
-    "en": "Avalanche transceiver, probe and shovel, ice axe, climbing harness, belay device and carabiners, winter clothing (including down/PrimaLoft jacket), skis or splitboard with skins, food and drink",
-    "no": "Skredsøker, søkestang og spade, isøks, stegjern, klatresele, taubrems og karabinere, vinterklær (inkl. dun/primaloftjakke), ski eller splitboard med feller, mat og drikke"
-  },
+    "bringEquipment": {
+      "en": "Avalanche transceiver, probe, and shovel, winter clothing (including down/primaloft jacket), skis or splitboard with skins, food and drink",
+      "no": "Skredsøker, søkestang og spade, vinterklær (inkl. dun/primaloftjakke), ski eller splitboard med feller, mat og drikke"
+    },
   "difficulty": {
     "en": "Basic",
     "no": "Grunnleggende"
