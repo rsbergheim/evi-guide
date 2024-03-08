@@ -1,0 +1,24 @@
+{
+  "id": "course5",
+  "title": {
+    "en": "Guided tours",
+    "no": "Guidede turer"
+  },
+  "duration": {
+    "en": "1-7 days",
+    "no": "1-7 dager"
+  },
+  "description": {
+    "en": "Tailored guided tours for you and your friends in great skiing terrain",
+    "no": "Få skreddersydd guiding til deg og din turgruppe i bra skiterreng"
+  },
+  "bringEquipment": {
+    "en": "Avalanche transceiver, probe and shovel, winter clothing (including down/PrimaLoft jacket), skis or splitboard with skins, food and drink",
+    "no": "Skredsøker, søkestang og spade, vinterklær (inkl. dun/primaloftjakke), ski eller splitboard med feller, mat og drikke"
+  },
+  "difficulty": {
+    "en": "Basic-Expert",
+    "no": "Grunnleggende-Ekspert"
+  }
+}
+

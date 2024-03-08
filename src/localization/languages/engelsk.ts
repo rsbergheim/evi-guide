@@ -14,18 +14,6 @@ const engelsk: Partial<Localization> = {
     epost: "E-mail",
     lesMer: "Read More",
     coursesHeading: 'Our Courses',
-    beginnerLevelTitle: 'Beginner Courses',
-    beginnerLevelDescription: 'Learn basic skills and safety on the mountain.',
-    expertLevelTitle: 'Advanced Courses',
-    expertLevelDescription: 'Are you confident in the basics of skiing and avalanche knowledge? Challenge your understanding, strengthen your skills with advice from an expert, and take your abilities to new heights.',
-    guidedToursTitle: 'Guided Tours',
-    guidedToursDescription: 'Experience the best of our mountains with an experienced guide.',
-    backcountrySkiingToursTitle: "Backcountry Skiing Courses",
-    backcountrySkiingToursDescription: "Backcountry skiing is well-known and widely practiced. If you want to learn the basic knowledge to get started, a backcountry skiing course is for you.",
-    freeskiingSchoolTitle: "Freeskiing School",
-    freeskiingSchoolDescription: "Do you dream of becoming a better freeskier? The Freeskiing School can help you improve your skiing, stick your landings, find the best snow, assess terrain, and most importantly, avoid avalanches.",
-    glacierToursTitle: "Glacier Guiding",
-    glacierToursDescription: "Do you dream of crossing a magnificent snow glacier or want to fill in knowledge gaps to reach the peak you've been eyeing for years? Trollheimen and its surroundings offer many exciting opportunities with spectacular nature.",
     bestill: "Order",
     pålDescription: "Pål is an internationally certified mountain guide and educated at the Norwegian School of Sport Sciences where he also worked as a teacher/supervisor in outdoor life. He has extensive experience as a guide including several seasons in Svalbard. In addition, he has taken guests to Greenland on kayak trips, Aconcagua, Kilimanjaro, and Nepal. This is a skilled and likable guy who makes a positive impact on the trip!",
     kontaktinfoHeader: "Contact Information",
@@ -42,7 +30,9 @@ const engelsk: Partial<Localization> = {
     antallPersoner: "Number of people ",
     dato: "Date: ",
     område: "Area: ",
-    homeDescription: "EVI Guide is a guideservice that sprung out of EVI ski at Øverlønset in Oppdal. The primary guiding area is Trollheimen and Sunndalsfjella, where the guide works as the avalanche risk reporter and at the ski factory."
+    homeDescription: "EVI Guide is a guideservice that sprung out of EVI ski at Øverlønset in Oppdal. The primary guiding area is Trollheimen and Sunndalsfjella, where the guide works as the avalanche risk reporter and at the ski factory.",
+    niva: "Level: ",
+    lengde: "Duration: "
 };
 
 export default engelsk;

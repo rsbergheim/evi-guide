@@ -1,0 +1,23 @@
+{
+  "id": "course2",
+  "title": {
+    "en": "Advanced avalanche course",
+    "no": "Viderekommende skredkurs"
+  },
+  "duration": {
+    "en": "3 days",
+    "no": "3 dager"
+  },
+  "description": {
+    "en": "Recognize avalanche terrain, perform companion rescue, find information on avalanche danger and snow conditions, gain a foundational understanding of snow and avalanches, know relevant equipment and the importance of personal motivation",
+    "no": "Gjenkjenn skredterreng, utfør kameratredning, finn informasjon om skredfare og snøforhold, få grunnleggende forståelse for snø og snøskred, kjenn til relevant utstyr og betydningen av egen motivasjon"
+  },
+  "bringEquipment": {
+    "en": "Avalanche transceiver, probe, and shovel, winter clothing (including down/primaloft jacket), skis or splitboard with skins, food and drink",
+    "no": "Skredsøker, søkestang og spade, vinterklær (inkl. dun/primaloftjakke), ski eller splitboard med feller, mat og drikke"
+  },
+  "difficulty": {
+    "en": "Advanced",
+    "no": "Viderekommende"
+  }
+}

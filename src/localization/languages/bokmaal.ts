@@ -5,7 +5,7 @@ const norwegian: Localization = {
     hjem: 'Hjem',
     turer: 'Turer',
     kurs: 'Kurs',
-    utstyr: 'Utstyr',
+    utstyr: 'Utstyr ',
     info: 'Info',
     kontaktinfo: 'Kontaktinfo',
     vilkår: 'Vilkår',
@@ -14,18 +14,6 @@ const norwegian: Localization = {
     epost: 'E-post',
     lesMer: 'Les mer',
     coursesHeading: 'Våre Kurs',
-    beginnerLevelTitle: 'Kurs for Nybegynnere',
-    beginnerLevelDescription: 'Lær grunnleggende ferdigheter og sikkerhet på fjellet.',
-    expertLevelTitle: 'Kurs for viderekommende',
-    expertLevelDescription: 'Er du trygg på det grunnleggende av skikjøring og skredlære? Utfordre kunnskapen din, styrk forståelsen med råd fra en ekspert og ta ferdighetene dine til nye høyder.',
-    guidedToursTitle: 'Guidede Turer',
-    guidedToursDescription: 'Opplev det beste av våre fjell med en erfaren guide.',
-    backcountrySkiingToursTitle: "Toppturkurs",
-    backcountrySkiingToursDescription: "Toppturer på ski er noe alle har hørt om og mange driver med. Dersom du har lyst til å lære deg de grunnleggende kunnskapene for å komme i gang er et toppturkurs noe for deg.",
-    freeskiingSchoolTitle: "Frikjøringsskolen",
-    freeskiingSchoolDescription: "Drømmer du om å bli en bedre frikjører? Frikjøringsskolen kan hjelpe deg til å kjøre bedre på ski, sette landingene dine, finne den beste snøen, vurdere terreng, og ikke minst unngå skred",
-    glacierToursTitle: "Breføring",
-    glacierToursDescription: "Drømmer du om å krysse en storslagen snøbre eller vil du tette kunnskapshull for å kunne nå tinden du har sett på i årevis? Trollheimen og omegn har mange spennende muligheter med spektakulær natur. ",
     bestill: "Bestill",
     pålDescription: "Pål er internasjonalt godkjent tindevegleder og utdannet ved Norges Idrettshøgskole hvor han også har jobbet som lærer/veileder innenfor friluftsliv. Han har lang erfaring som guide med blant annet flere sesonger på Svalbard. I tillegg har han hatt med seg gjester til Grønland på kajakktur, Aconcagoa, Kilimanjaro og Nepal.  Dette er en flink og likanes kar som setter sitt preg på turen i positiv forstand!",
     kontaktinfoHeader: "Kontaktinformasjon",
@@ -42,7 +30,9 @@ const norwegian: Localization = {
     antallPersoner: "Antall personer: ",
     dato: "Dato: ",
     område: "Område: ",
-    homeDescription: "EVI Guide er en guidetjeneste fra EVI ski på Øverlønset i Oppdal. Det primære guideområdet er Trollheimen og Sunndalsfjella, hvor guiden jobber med snøskredvarsling og på skifabrikken."
+    homeDescription: "EVI Guide er en guidetjeneste fra EVI ski på Øverlønset i Oppdal. Det primære guideområdet er Trollheimen og Sunndalsfjella, hvor guiden jobber med snøskredvarsling og på skifabrikken.",
+    niva: "Nivå: ",
+    lengde: "Lengde: "
 };
 
 export default norwegian;

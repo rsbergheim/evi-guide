@@ -1,0 +1,23 @@
+{
+  "id": "course3",
+  "title": {
+    "en": "Ski touring course",
+    "no": "Toppturkurs"
+  },
+  "duration": {
+    "en": "2 days",
+    "no": "2 dager"
+  },
+  "description": {
+    "en": "Learn the essentials of ski touring, including planning, navigating, and techniques for both ascending and descending in varied terrain",
+    "no": "Lær det grunnleggende i toppturer, inkludert planlegging, navigering og teknikker for både oppstigning og nedstigning i variert terreng"
+  },
+  "bringEquipment": {
+    "en": "Avalanche transceiver, probe, and shovel, winter clothing (including down/primaloft jacket), skis or splitboard with skins, food and drink",
+    "no": "Skredsøker, søkestang og spade, vinterklær (inkl. dun/primaloftjakke), ski eller splitboard med feller, mat og drikke"
+  },
+  "difficulty": {
+    "en": "Basic",
+    "no": "Grunnleggende"
+  }
+}
