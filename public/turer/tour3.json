@@ -1,37 +1,37 @@
 {
   "id": "tour3",
   "title": {
-    "en": "Ski guiding in Øksendalen",
-    "no": "Skiføring i Øksendalen"
+    "en": "Ski guiding in Romsdalen",
+    "no": "Skiføring in Romsdalen"
   },
   "description": {
-    "en": "Trondskjortetind and Litlskjorta",
-    "no": "Trondskjortetind og Litlskjorta"
+    "en": "Åndalsnes, Isfjorden, Måndalen, and Innfjorden",
+    "no": "Åndalsnes, Isfjorden, Måndalen og Innfjorden"
   },
-  "image": "tour3.jpg",
-  "difficulty": "Hard",
-  "length": "1 day",
+  "image": "tour4.jpg",
+  "difficulty": "Moderate",
+  "length": "2 days",
   "details": {
     "en": {
-      "longDescription": "In the shadows of the towering peaks of Trondskjortetind and Litlskjorta lies Øksendalen, a valley that invites the brave to challenge its steep couloirs and experience the rush of gravity in its purest form.\n\nHighlights:\n- Thrilling descents down steep and narrow couloirs\n- The majestic beauty of Trondskjortetind and Litlskjorta\n- Unparalleled views of Øksendalen's rugged terrain\n\nThis is where adrenaline meets peace, where each turn on the steep slopes is a testament to the skier's skill and audacity. The journey is not for the faint-hearted, as it requires navigating the intricate dance of descent on terrain that commands respect. The hard-earned turns are rewarded with a sense of exhilaration that only the steep walls of Øksendalen can offer.",
+      "longDescription": "Romsdalen, a landscape painted with the brushstrokes of the gods, invites you on a two-day escapade through the best of Norway's raw and untamed beauty. From the quiet streets of Åndalsnes to the rugged cliffs of Innfjorden, the tour is a feast for the senses.\n\nHighlights:\n- The stunning views from the peaks of Åndalsnes\n- Kayaking in the serene waters of Isfjorden\n- The quaint charm of Måndalen and Innfjorden\n\nDiscover the heart of Romsdalen as you traverse through its enchanting terrain, where legends of old seem to come alive with each step. This moderate adventure requires a spirit of endurance and a yearning to uncover the secrets held within the silent fjords and ancient mountains. Spend your nights under a canopy of stars and wake up to the gentle caress of the Nordic sun, ready to explore further into this mythical land.",
       "images": [
-        "tour3-1.jpg",
-        "tour3-2.jpg"
+        "tour4-1.jpg",
+        "tour4-2.jpg"
       ],
       "mapCoordinates": {
-        "lat": 62.63154,
-        "lon": 8.29437
+        "lat": 62.56744,
+        "lon": 7.6878
       }
     },
     "no": {
-      "longDescription": "I skyggen av de høye toppene Trondskjortetind og Litlskjorta ligger Øksendalen, en dal som inviterer de modige til å utfordre sine bratte renner og oppleve tyngdekraftens rus i sin reneste form.\n\nHøydepunkter:\n- Spennende nedstigninger ned bratte og trange renner\n- Den majestetiske skjønnheten til Trondskjortetind og Litlskjorta\n- Uovertrufne utsikter over Øksendalens robuste terreng\n\nDette er hvor adrenalin møter fred, hvor hver sving i de bratte bakkene er et bevis på skiløperens ferdighet og dumdristighet. Reisen er ikke for de hjertesvake, da den krever navigering av den intrikate dansen av nedstigning på et terreng som krever respekt. De hardt opptjente svingene belønnes med en følelse av eufori som bare de bratte veggene i Øksendalen kan tilby.",
+      "longDescription": "Romsdalen, et landskap malt med gudenes penselstrøk, inviterer deg på en todagers utflukt gjennom det beste av Norges rå og utemmede skjønnhet. Fra de rolige gatene i Åndalsnes til de ruvende klippene i Innfjorden, turen er en fest for sansene.\n\nHøydepunkter:\n- De fantastiske utsiktene fra toppene i Åndalsnes\n- Kajakkpadling i de rolige vannene i Isfjorden\n- Den sjarmerende idyllen i Måndalen og Innfjorden\n\nOppdag hjertet av Romsdalen mens du vandrer gjennom det fortryllende terrenget, hvor gamle legender synes å våkne til liv med hvert skritt. Dette moderate eventyret krever en ånd av utholdenhet og et ønske om å avdekke de hemmeligheter som ligger skjult i de stille fjordene og eldgamle fjellene. Tilbring nettene under en himmel av stjerner og våkn opp til den nordiske solens milde kjærtegn, klar til å utforske videre inn i dette mytiske landet.",
       "images": [
-        "tour3-1.jpg",
-        "tour3-2.jpg"
+        "tour4-1.jpg",
+        "tour4-2.jpg"
       ],
       "mapCoordinates": {
-        "lat": 62.63154,
-        "lon": 8.29437
+        "lat": 62.58583,
+        "lon": 7.83306
       }
     }
   }
