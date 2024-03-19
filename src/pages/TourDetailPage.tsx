@@ -5,7 +5,7 @@ import {MapContainer, TileLayer, Marker} from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L, {LatLngExpression} from 'leaflet';
 import {ContentContainer, ContentSectionVert, ContentText, Page} from "../components/Page";
-import "./TourDetailPage.css"
+import "./TourDetailPage.css";
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 
@@ -16,25 +16,27 @@ let DefaultIcon = L.icon({
 
 L.Marker.prototype.options.icon = DefaultIcon;
 
-
-type LocalizedDetails = {
-    longDescription: string;
-    images: string[];
-    mapCoordinates: {
-        lat: number;
-        lon: number;
-    };
-};
-
 type TourDetail = {
     id: string;
     title: {
         en: string;
         no: string;
     };
-    details: {
-        en: LocalizedDetails;
-        no: LocalizedDetails;
+    description: {
+        en: string;
+        no: string;
+    };
+    longDescription: {
+        en: string;
+        no: string;
+    };
+    image: string;
+    difficulty: string;
+    length: string;
+    images: string[];
+    mapCoordinates: {
+        lat: number;
+        lon: number;
     };
 };
 
@@ -68,10 +70,7 @@ const TourDetailPage: React.FC = () => {
         return <div>Loading tour details...</div>;
     }
 
-    // Accessing `details` based on the current language
-    const details = tourDetail.details[language];
-    const position: LatLngExpression = [details.mapCoordinates.lat, details.mapCoordinates.lon]; // Explicitly type position
-
+    const position: LatLngExpression = [tourDetail.mapCoordinates.lat, tourDetail.mapCoordinates.lon];
 
     return (
         <Page isHomePage={false}>
@@ -79,17 +78,17 @@ const TourDetailPage: React.FC = () => {
                 <ContentSectionVert>
                     <ContentText>
                         <h2>{tourDetail.title[language]}</h2>
-                        <p className="ContentText">{details.longDescription.split('\n').map((paragraph, index) => (
+                        {tourDetail.longDescription[language].split('\n').map((paragraph, index) => (
                             <p key={index} className="ContentText">{paragraph}</p>
-                        ))}</p>
-                        <div>
-                            {details.images.map((image) => (
-                                <>
-                                    <img key={image} className="illustrative-img" src={`/turer/images/${image}`}
-                                   alt={`Detail of ${image}`}/>
-                                <p></p>
-                            </>
                         ))}
+                        <div>
+                            {tourDetail.images.map((image, index) => (
+                                <React.Fragment key={index}>
+                                    <img className="illustrative-img" src={`/turer/images/${image}`}
+                                         alt={`Detail of ${image}`}/>
+                                    <p></p>
+                                </React.Fragment>
+                            ))}
                         </div>
                     </ContentText>
                     <MapContainer
@@ -98,7 +97,7 @@ const TourDetailPage: React.FC = () => {
                         scrollWheelZoom={false}
                         style={{height: "400px", width: "60%"}}
                     >
-                    <TileLayer
+                        <TileLayer
                             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                         />
                         <Marker position={position}>

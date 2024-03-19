@@ -14,11 +14,11 @@
 }
 
 .background-image.home {
-    background: url('/eviguide_picture.jpeg') center/cover no-repeat;
+    background: url('/public/eviguide_picture.jpeg') center/cover no-repeat;
     opacity: 1; /* Full opacity for home */
 }
 
 .background-image.other {
-    background: url('/eviguide_picture.jpeg') center/cover no-repeat;
+    background: url('/public/eviguide_picture.jpeg') center/cover no-repeat;
     opacity: 0.8; /* Adjust the opacity to make it translucent */
 }

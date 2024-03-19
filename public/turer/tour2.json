@@ -11,28 +11,16 @@
   "image": "tour2.jpg",
   "difficulty": "Easy",
   "length": "1 day",
-  "details": {
-    "en": {
-      "longDescription": "Vinnubreen, a majestic ice cap in the heart of Norway, presents an exhilarating adventure akin to the fabled Vallée Blanche but with a distinct Norse twist. Here, each glide is a dance with nature, each stop a moment to breathe in vistas that stretch out into eternity.\n\nHighlights:\n- A thrilling descent on one of Norway's most spectacular glaciers\n- The sensation of carving through centuries-old ice\n- Panoramic views of the awe-inspiring mountain landscape\n\nEmbark on a journey that starts with the crisp crunch of skis on fresh ice and culminates in the warmth of accomplishment. Vinnubreen, with its vast, open terrain, offers skiers a unique opportunity to explore the raw and unfiltered beauty of Norway's frozen wilderness. As you navigate through this icy realm, you are not just skiing; you are tracing the paths of ancient ice flows, etched into the earth eons ago.",
-      "images": [
-        "tour2-1.jpg",
-        "tour2-2.jpg"
-      ],
-      "mapCoordinates": {
-        "lat": 62.7447,
-        "lon": 8.65446
-      }
-    },
-    "no": {
-      "longDescription": "Vinnubreen, en majestetisk isbre i hjertet av Norge, byr på et spennende eventyr sammenlignbart med den berømte Vallée Blanche, men med en distinkt norsk vri. Her er hver glid en dans med naturen, hvert stopp et øyeblikk for å puste inn utsikter som strekker seg ut i evigheten.\n\nHøydepunkter:\n- En spennende nedstigning på en av Norges mest spektakulære isbreer\n- Følelsen av å skjære gjennom århundrer gammel is\n- Panoramautsikt over det imponerende fjellandskapet\n\nBegi deg ut på en reise som begynner med den skarpe knirken av ski på fersk is og kulminerer i varmen av prestasjon. Vinnubreen, med sitt vide, åpne terreng, tilbyr skiløpere en unik mulighet til å utforske den rå og ufiltrerte skjønnheten til Norges frosne villmark. Når du navigerer gjennom dette isete riket, står du ikke bare på ski; du sporer de gamle isstrømmenes veier, risset inn i jorden for lenge siden.",
-      "images": [
-        "tour2-1.jpg",
-        "tour2-2.jpg"
-      ],
-      "mapCoordinates": {
-        "lat": 62.7447,
-        "lon": 8.65446
-      }
-    }
+  "images": [
+    "tour2-1.jpg",
+    "tour2-2.jpg"
+  ],
+  "mapCoordinates": {
+    "lat": 62.7447,
+    "lon": 8.65446
+  },
+  "longDescription": {
+    "en": "Vinnubreen, a majestic ice cap in the heart of Norway, presents an exhilarating adventure akin to the fabled Vallée Blanche but with a distinct Norse twist. Here, each glide is a dance with nature, each stop a moment to breathe in vistas that stretch out into eternity.\n\nHighlights:\n- A thrilling descent on one of Norway's most spectacular glaciers\n- The sensation of carving through centuries-old ice\n- Panoramic views of the awe-inspiring mountain landscape\n\nEmbark on a journey that starts with the crisp crunch of skis on fresh ice and culminates in the warmth of accomplishment. Vinnubreen, with its vast, open terrain, offers skiers a unique opportunity to explore the raw and unfiltered beauty of Norway's frozen wilderness. As you navigate through this icy realm, you are not just skiing; you are tracing the paths of ancient ice flows, etched into the earth eons ago.",
+    "no": "Vinnubreen, en majestetisk isbre i hjertet av Norge, byr på et spennende eventyr sammenlignbart med den berømte Vallée Blanche, men med en distinkt norsk vri. Her er hver glid en dans med naturen, hvert stopp et øyeblikk for å puste inn utsikter som strekker seg ut i evigheten.\n\nHøydepunkter:\n- En spennende nedstigning på en av Norges mest spektakulære isbreer\n- Følelsen av å skjære gjennom århundrer gammel is\n- Panoramautsikt over det imponerende fjellandskapet\n\nBegi deg ut på en reise som begynner med den skarpe knirken av ski på fersk is og kulminerer i varmen av prestasjon. Vinnubreen, med sitt vide, åpne terreng, tilbyr skiløpere en unik mulighet til å utforske den rå og ufiltrerte skjønnheten til Norges frosne villmark. Når du navigerer gjennom dette isete riket, står du ikke bare på ski; du sporer de gamle isstrømmenes veier, risset inn i jorden for lenge siden."
   }
 }
