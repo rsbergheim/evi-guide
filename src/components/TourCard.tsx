@@ -33,7 +33,7 @@ interface TourCardProps {
 }
 
 const TourCard: React.FC<TourCardProps> = ({tour}) => {
-    const imagePath = require(`../../public/turer/images/${tour.image}`);
+    const imagePath = (`/turer/images/${tour.image}`);
     const {language} = useLanguage();
     const navigate = useNavigate(); // Initialize useNavigate
 
