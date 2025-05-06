@@ -15,7 +15,6 @@ const norwegian: Localization = {
     lesMer: 'Les mer',
     coursesHeading: 'Våre Kurs',
     bestill: "Bestill",
-    pålDescription: "Pål er internasjonalt godkjent tindevegleder og utdannet ved Norges Idrettshøgskole hvor han også har jobbet som lærer/veileder innenfor friluftsliv. Han har lang erfaring som guide med blant annet flere sesonger på Svalbard. I tillegg har han hatt med seg gjester til Grønland på kajakktur, Aconcagoa, Kilimanjaro og Nepal.  Dette er en flink og likanes kar som setter sitt preg på turen i positiv forstand!",
     kontaktinfoHeader: "Kontaktinformasjon",
     kontaktinfoDescription1: "Ta kontakt om du har spørsmål om føring, turer eller kurs.",
     kontaktinfoDescription2: "Nå oss på epost: ",
@@ -30,7 +29,7 @@ const norwegian: Localization = {
     antallPersoner: "Antall personer: ",
     dato: "Dato: ",
     område: "Område: ",
-    homeDescription: "EVI Guide er en guidetjeneste fra EVI ski på Øverlønset i Oppdal. Det primære guideområdet er Trollheimen og Sunndalsfjella, hvor guiden jobber med snøskredvarsling og på skifabrikken.",
+    homeDescription: "EVI Guide er en guidetjeneste fra EVI ski på Øverlønset i Oppdal. Det primære guideområdet er Trollheimen og Sunndalsfjella",
     niva: "Nivå: ",
     lengde: "Lengde: "
 };

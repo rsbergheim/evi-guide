@@ -15,7 +15,6 @@ const engelsk: Partial<Localization> = {
     lesMer: "Read More",
     coursesHeading: 'Our Courses',
     bestill: "Order",
-    pålDescription: "Pål is an internationally certified mountain guide and educated at the Norwegian School of Sport Sciences where he also worked as a teacher/supervisor in outdoor life. He has extensive experience as a guide including several seasons in Svalbard. In addition, he has taken guests to Greenland on kayak trips, Aconcagua, Kilimanjaro, and Nepal. This is a skilled and likable guy who makes a positive impact on the trip!",
     kontaktinfoHeader: "Contact Information",
     kontaktinfoDescription1: "Contact us if you have any questions about guiding, tours, or courses.",
     kontaktinfoDescription2: "Reach out to us at ",
@@ -30,7 +29,7 @@ const engelsk: Partial<Localization> = {
     antallPersoner: "Number of people ",
     dato: "Date: ",
     område: "Area: ",
-    homeDescription: "EVI Guide is a guideservice that sprung out of EVI ski at Øverlønset in Oppdal. The primary guiding area is Trollheimen and Sunndalsfjella, where the guide works as the avalanche risk reporter and at the ski factory.",
+    homeDescription: "EVI Guide is a guideservice that sprung out of EVI ski at Øverlønset in Oppdal. The primary guiding area is Trollheimen and Sunndalsfjella.",
     niva: "Level: ",
     lengde: "Duration: "
 };
