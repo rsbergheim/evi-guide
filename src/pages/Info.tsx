@@ -17,10 +17,10 @@ const Info = () => {
             <ContentContainer>
                 <ContentSection>
                     <ContentText>
-                        <h1>Pål Røsrud</h1>
-                        <p>{localizer(language, "pålDescription")}</p>
+                        <h1>EVI Guide</h1>
+                        <p>{localizer(language, "homeDescription")}</p>
                     </ContentText>
-                    <img className="profile-picture" src="/paal.jpg" alt="Pål Røsrud"/>
+                    <img className="profile-picture" src="/eviguide_logo.png" alt="EVI Guide"/>
                 </ContentSection>
                 <ContentSection>
                     <ContentText>

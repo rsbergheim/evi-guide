@@ -13,7 +13,6 @@ export default interface Localization {
     lesMer: string;
     coursesHeading: string;
     bestill: string;
-    pålDescription: string;
     kontaktinfoHeader: string;
     kontaktinfoDescription1: string;
     kontaktinfoDescription2: string;
