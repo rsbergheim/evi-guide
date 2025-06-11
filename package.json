@@ -6,7 +6,7 @@
   "dependencies": {
     "@types/react": "^19.1.7",
     "@types/react-dom": "^19.1.6",
-    "@vitejs/plugin-react-swc": "^3.10.1",
+    "@vitejs/plugin-react-swc": "^3.10.2",
     "bootstrap": "^5.3.6",
     "leaflet": "^1.9.4",
     "react": "^19.1.0",
