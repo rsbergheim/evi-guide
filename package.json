@@ -7,7 +7,7 @@
     "@types/react": "^19.1.12",
     "@types/react-dom": "^19.1.7",
     "@vitejs/plugin-react-swc": "^4.0.1",
-    "bootstrap": "^5.3.7",
+    "bootstrap": "^5.3.8",
     "leaflet": "^1.9.4",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
