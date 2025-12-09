@@ -5,7 +5,23 @@
 
 version: 2
 updates:
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: "npm" # Adjust to your package manager (e.g., "pip", "docker")
+    directory: "/" # Location of your package.json
     schedule:
-      interval: "daily"
+      interval: "weekly"
+    # Enable a group update for Vitest and coverage
+    groups:
+      vitest-updates:
+        # Name of the group (can be anything)
+        applies-to: version-updates
+        patterns:
+          # Include vitest and any coverage related packages
+          - "vitest"
+          - "@vitest/coverage-*"
+          - "c8"
+          - "istanbul"
+        # Optional: set a separate commit message for the group
+        update-types:
+          - "major"
+          - "minor"
+          - "patch"
